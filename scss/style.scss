@@ -1,0 +1,14 @@
+// Подключение базовых настроек
+@import 'settings';
+
+// Подключение переменных
+@import 'variables';
+
+// Подключение normalize
+@import 'normalize';
+
+// Подключение стилей для блока header
+@import 'blocks/header';
+
+// Подключение стилей для адаптива
+@import 'media';

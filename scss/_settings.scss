@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Lato-Heavy';
+  src: url('../fonts/Lato-Heavy.woff') format('woff'),
+    url('../fonts/Lato-Heavy.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-HeavyItalic';
+  src: url('../fonts/Lato-HeavyItalic.woff') format('woff'),
+    url('../fonts/Lato-HeavyItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  overflow: hidden;
+}
