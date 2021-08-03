@@ -1,3 +1,29 @@
+@media (min-width: 992px) {
+  .navbar {
+    &-menu {
+      &__link:hover {
+        border-bottom: 4px solid #4592ff;
+      }
+    }
+    &-button:hover {
+      background: #4592ff;
+      color: #fff;
+    }
+  }
+  .hero {
+    &-image {
+      &__button:hover {
+        background: #20477d;
+      }
+    }
+    &-tabs {
+      &__item:hover {
+        background: #f5f5f5;
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -41,16 +67,46 @@
       display: none;
     }
   }
+  .hero {
+    &-title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
   .container {
-    max-width: 576px;
+    max-width: 550px;
+  }
+  .hero {
+    &-image {
+      display: none;
+    }
+    &-tabs {
+      max-width: 100%;
+      &__item {
+        min-height: 80px;
+        &--cs {
+          padding-bottom: 0;
+        }
+      }
+      &__info {
+        max-width: 90%;
+      }
+    }
   }
 }
 
 @media (max-width: 576px) {
   .container {
     max-width: 90%;
+  }
+  .hero {
+    &-tabs {
+      &__item {
+        min-height: 90px;
+      }
+    }
   }
 }

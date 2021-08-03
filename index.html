@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Universal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/newspaper.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/newspaper.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="css/style.css" />
+
   <body>
     <header class="navbar">
       <div class="container">
@@ -28,7 +31,9 @@
               <a class="navbar-menu__link" href="#">Новости</a>
             </li>
             <li class="navbar-menu__item">
-              <a class="navbar-menu__link" href="#">Горячее</a>
+              <a class="navbar-menu__link navbar-menu__link--hot" href="#"
+                >Горячее</a
+              >
             </li>
             <li class="navbar-menu__item">
               <a class="navbar-menu__link" href="#">HTML</a>
@@ -52,5 +57,79 @@
         </div>
       </div>
     </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-wrapper">
+          <div class="hero-image">
+            <div class="hero-user">
+              <a class="hero-user__link" href="#">
+                <img
+                  class="hero-user__img"
+                  src="img/hero/user.png"
+                  alt="Давид Гуров"
+                />
+              </a>
+              <div class="hero-user__names">
+                <span class="hero-user__name">Давид Гуров</span>
+                <span class="hero-user__prof">Разработчик</span>
+              </div>
+            </div>
+            <div class="hero-text">
+              <h2 class="hero-subtitle">Javascript</h2>
+              <h1 class="hero-title">Расширение Chrome защищает от атак</h1>
+              <a class="hero-image__button" href="#">
+                Читать далее
+                <img
+                  class="hero-image__button-img"
+                  src="img/hero/Arrow.svg"
+                  alt="Icon: Arrow"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hero-tabs">
+            <div class="hero-tabs__item--title">
+              <span class="hero-tabs__title">Рекомендуем</span>
+            </div>
+            <div class="hero-tabs__item hero-tabs__item--css">
+              <h2 class="hero-tabs__subtitle hero-tabs__subtitle--css">css</h2>
+              <span class="hero-tabs__info"
+                >Как использовать CSS float после того, как вышел Flexbox</span
+              >
+            </div>
+            <div class="hero-tabs__item hero-tabs__item--js">
+              <h2 class="hero-tabs__subtitle hero-tabs__subtitle--js">
+                javascript
+              </h2>
+              <span class="hero-tabs__info"
+                >На каком стандарте писать скрипты, если я фрилансер</span
+              >
+            </div>
+            <div class="hero-tabs__item hero-tabs__item--html">
+              <h2 class="hero-tabs__subtitle hero-tabs__subtitle--html">
+                html
+              </h2>
+              <span class="hero-tabs__info"
+                >Правильно вставляем картинку на сайт для Retina дисплея</span
+              >
+            </div>
+            <div class="hero-tabs__item hero-tabs__item--web">
+              <h2 class="hero-tabs__subtitle hero-tabs__subtitle--web">
+                Web design
+              </h2>
+              <span class="hero-tabs__info">ТОП-10 плагинов для Figma</span>
+            </div>
+            <div class="hero-tabs__item hero-tabs__item--cs">
+              <h2 class="hero-tabs__subtitle hero-tabs__subtitle--cs">CSS</h2>
+              <span class="hero-tabs__info"
+                >Возможности CSS Grid Layout , которые уже можно применять</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/index.js"></script>
   </body>
 </html>
