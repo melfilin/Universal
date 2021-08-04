@@ -4,6 +4,7 @@
     flex-direction: row;
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 30px;
   }
   &-image {
     background: #333;
@@ -12,7 +13,7 @@
     border-radius: 10px 0 0 10px;
     padding-top: 55px;
     padding-left: 55px;
-    padding-bottom: 98px;
+    padding-bottom: 110px;
     max-width: 877px;
     width: 100%;
     color: $font-white;
@@ -93,10 +94,16 @@
         background: #fff;
         padding-top: 20px;
         padding-left: 25px;
-        min-height: 59px;
+        min-height: 60px;
+      }
+      &--js {
+        min-height: 99px;
+        padding-top: 18px;
       }
       &--cs {
-        padding-bottom: 28px;
+        min-height: 110px;
+        padding-top: 20px;
+        padding-bottom: 30px;
       }
     }
     &__title {
@@ -122,11 +129,14 @@
       }
       &--html {
         color: #ac8ee3;
+        margin-bottom: 10px;
       }
       &--web {
         color: #ffa34d;
+        margin-bottom: 10px;
       }
       &--cs {
+        margin-bottom: 10px;
         color: #3dc47e;
       }
     }

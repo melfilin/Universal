@@ -55,7 +55,7 @@ function addBg(bg) {
     0deg,
     rgba(64, 48, 61, 0.35),
     rgba(64, 48, 61, 0.35)
-  ), url(../img/hero/hero-image-${bg}.jpeg)`;
+  ), url(./img/hero/hero-image-${bg}.jpeg)`;
 }
 
 function addActiveContent({ subtitle, title, bg, subClr }, tab) {

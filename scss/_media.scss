@@ -37,6 +37,20 @@
       padding: 12px 30px 12px 30px;
     }
   }
+  .suggestion {
+    &__item {
+      padding: 0;
+      justify-content: center;
+    }
+    &-photo {
+      width: 55px;
+      height: 55px;
+    }
+    &__text {
+      font-size: 13px;
+      max-width: 147px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -73,6 +87,28 @@
       line-height: 40px;
     }
   }
+  .suggestion {
+    &-wrapper {
+      padding: 20px 0;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__item {
+      flex-basis: 50%;
+      padding: 15px 15px;
+    }
+    &__item:nth-child(1) {
+      border-bottom: 1px solid #4b5157;
+    }
+    &__item:nth-child(2) {
+      border-bottom: 1px solid #4b5157;
+    }
+
+    &-photo {
+      width: 65px;
+      height: 65px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -80,17 +116,28 @@
     max-width: 550px;
   }
   .hero {
+    &-wrapper {
+      flex-direction: column;
+    }
     &-image {
-      display: none;
+      padding-bottom: 80px;
+    }
+    &-user {
+      margin-bottom: 30px;
     }
     &-tabs {
       max-width: 100%;
       &__item {
         min-height: 80px;
-        &--cs {
-          padding-bottom: 0;
+        padding-left: 55px;
+        &--title {
+          padding-left: 55px;
         }
+        // &--cs {
+        //   padding-bottom: 0;
+        // }
       }
+
       &__info {
         max-width: 90%;
       }
@@ -103,10 +150,42 @@
     max-width: 90%;
   }
   .hero {
+    &-title {
+      font-size: 25px;
+    }
+    &-image {
+      padding: 30px 60px 50px 25px;
+    }
     &-tabs {
       &__item {
         min-height: 90px;
+        padding-left: 25px;
+        &--title {
+          padding-left: 25px;
+        }
       }
+    }
+  }
+  .suggestion {
+    &-wrapper {
+      padding: 10px 0;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    &__item {
+      justify-content: space-between;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    &__item:nth-child(3) {
+      border-bottom: 1px solid #4b5157;
+    }
+  }
+}
+@media (max-width: 355px) {
+  .hero {
+    &-image {
+      padding-right: 20px;
     }
   }
 }
