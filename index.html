@@ -19,7 +19,7 @@
   <body>
     <header class="navbar">
       <div class="container">
-        <div class="navbar-wrapper">
+        <div class="navbar-wrapper navbar-wrapper__mobile-hidden">
           <a href="#" class="logo">
             <img class="navbar__logo" src="img/Logo/logo-white.svg" alt="" />
           </a>
@@ -76,7 +76,7 @@
               </div>
             </div>
             <div class="hero-text">
-              <h2 class="hero-subtitle">Javascript</h2>
+              <h2 class="subtitle hero-subtitle">Javascript</h2>
               <h1 class="hero-title">Расширение Chrome защищает от атак</h1>
               <a class="hero-image__button" href="#">
                 Читать далее
@@ -93,13 +93,15 @@
               <span class="hero-tabs__title">Рекомендуем</span>
             </div>
             <div class="hero-tabs__item hero-tabs__item--css">
-              <h2 class="hero-tabs__subtitle hero-tabs__subtitle--css">css</h2>
+              <h2 class="subtitle hero-tabs__subtitle hero-tabs__subtitle--css">
+                css
+              </h2>
               <span class="hero-tabs__info"
                 >Как использовать CSS float после того, как вышел Flexbox</span
               >
             </div>
             <div class="hero-tabs__item hero-tabs__item--js">
-              <h2 class="hero-tabs__subtitle hero-tabs__subtitle--js">
+              <h2 class="subtitle hero-tabs__subtitle hero-tabs__subtitle--js">
                 javascript
               </h2>
               <span class="hero-tabs__info"
@@ -107,7 +109,9 @@
               >
             </div>
             <div class="hero-tabs__item hero-tabs__item--html">
-              <h2 class="hero-tabs__subtitle hero-tabs__subtitle--html">
+              <h2
+                class="subtitle hero-tabs__subtitle hero-tabs__subtitle--html"
+              >
                 html
               </h2>
               <span class="hero-tabs__info"
@@ -115,13 +119,15 @@
               >
             </div>
             <div class="hero-tabs__item hero-tabs__item--web">
-              <h2 class="hero-tabs__subtitle hero-tabs__subtitle--web">
+              <h2 class="subtitle hero-tabs__subtitle hero-tabs__subtitle--web">
                 Web design
               </h2>
               <span class="hero-tabs__info">ТОП-10 плагинов для Figma</span>
             </div>
             <div class="hero-tabs__item hero-tabs__item--cs">
-              <h2 class="hero-tabs__subtitle hero-tabs__subtitle--cs">CSS</h2>
+              <h2 class="subtitle hero-tabs__subtitle hero-tabs__subtitle--cs">
+                CSS
+              </h2>
               <span class="hero-tabs__info"
                 >Возможности CSS Grid Layout , которые уже можно применять</span
               >
@@ -182,48 +188,208 @@
         </div>
       </div>
     </section>
+    <section class="articles">
+      <div class="container">
+        <div class="articles-wrapper">
+          <div class="articles__item articles__item-work">
+            <div class="articles__item-work__top">
+              <div class="articles__item-work__content">
+                <h2 class="articles__subtitle articles__item-work__subtitle">Статьи</h2>
+                <h1 class="articles__title articles__item-work__title">
+                  Вам предложили работу мечты, но вы не можете...
+                </h1>
+                <span class="articles__item-work__info"
+                  >Как поступить, если хочется пойти на работу мечты, но она находится
+                  в другом городе. У вас семья и переезжать вы не готовы.
+                </span>
+              </div>
+              <img src="img/articles/car.png" alt="фото: машина" class="articles-work__photo" />
+            </div>
+            <div class="articles-author__work">
+              <img src="img/articles/user-articles.png" alt="фото: Инна Квашова" class="articles-author__photo-work" />
+              <span class="articles-author__name-work">Инна Квашова:</span>
+              <span class="articles-author__quote"
+                >Каждый разработчик мечтает переехать в...</span
+              >
+              <img src="img/articles/comment-gray.svg" alt="Иконка: письмо" class="articles__icon-work" />
+              <span class="articles__number-work">342</span>
+            </div>
+          </div>
+  
+          <div class="articles__item articles__item-project">
+            <span class="articles__item-project__popular">Популярное</span>
+            <h2 class="articles__subtitle articles__item-project__subtitle">Web design</h2>
+            <h1 class="articles__title articles__item-project__title">
+              Где взять реальные проекты для портфолио
+            </h1>
+            <div class="articles-author">
+              <img src="img/articles/user-articles.png" alt="фотоЖ Сара Женникова" class="articles-author__photo-project" />
+              <div class="articles-author__text">
+                <span class="articles-author__name">Сара Женникова</span>
+                <div class="articles-author__stat">
+                  <span class="articles-author__date">25 сентября</span>
+                  <img src="img/articles/comment.svg" alt="Иконка: письмо" class="articles__icon" />
+                  <span class="articles__number">16</span>
+                  <img src="img/articles/heart.svg" alt="Иконка: лайк" class="articles__icon" />
+                  <span class="articles__number--16">832</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="articles__item articles__item-check">
+            <div class="articles__item-check__text">
+              <h1 class="articles__title articles__item-check__title">
+                Чек-лист сдачи верстки вашему заказчику
+              </h1>
+              <span class="articles__item-check__size">PDF, 125 Мб</span>
+            </div>
+            <div class="articles__item-check__block">
+              <img src="img/articles/download.svg" alt="иконка: скачать" class="articles__item-check__icon" />
+              <a href="files/empty.pdf" download class="articles__item-check__down" href="#">Скачать</a>
+            </div>
+          </div>
+          
+          <div class="articles__item articles__item-tool">
+            <img src="img/articles/tool.png" alt="фото: ноутбук" class="articles__item-tool__photo" />
+            <h1 class="articles__title articles__item-tool__title">
+              20+ инструментов для js-разработчика
+            </h1>
+          </div>
+    
+          <div class="articles__item articles__item-small">
+            <h1 class="articles__title articles__item-small__title">
+              Удачные референсы
+            </h1>
+            <span class="articles__item-small__info articles__item-small--25 articles__item-small__info--10">
+            Как выбрать подходящие исходники, если вы ищите идею для интерфейса
+            </span>
+            <span class="articles__item-small__date--20">15 октября</span>
+          </div>
+    
+          <div class="articles__item articles__item-small">
+            <h1 class="articles__title articles__item-small__title">
+              Заказчики — мудаки?
+            </h1>
+            <span class="articles__item-small__info articles__item-small__info--20">
+              Как защититься от бесконечных правок на этапе сдачи проекта
+            </span>
+            <span class="articles__item-small__date">20 октября</span>
+          </div>
+    
+          <div class="articles__item articles__item-tags">
+            <h1 class="articles__title articles__item-tags__title">
+              Теги
+            </h1>
+           <div class="articles__item-tags__wrapper"><span class="articles__item-tags__tag">Forest</span><span class="articles__item-tags__tag">Hover tag</span><span class="articles__item-tags__tag">Nature</span><span class="articles__item-tags__tag">Recreation</span><span class="articles__item-tags__tag">Tent</span><span class="articles__item-tags__tag">Fresh air</span><span class="articles__item-tags__tag">Summer</span><span class="articles__item-tags__tag">Mountains</span><span class="articles__item-tags__tag">Wood</span><span class="articles__item-tags__tag">Map</span><span class="articles__item-tags__tag">Sun</span><span class="articles__item-tags__tag">Wild animals</span><span class="articles__item-tags__tag">Night</span></div>
+          </div>
+          
+          <div class="articles__item articles__item-small">
+            <h1 class="articles__title articles__item-small__title">
+              Работа без стресса — это...
+            </h1>
+            <span class="articles__item-small__info">
+              Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего... 
+            </span>
+            <span class="articles__item-small__date">26 октября</span>
+          </div>
+      
+          <div class="articles__item articles__item-small">
+            <h1 class="articles__title articles__item-small__title">
+              Бесплатные методы...
+            </h1>
+            <span class="articles__item-small__info articles__item-small--25">
+              Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения
+            </span>
+            <span class="articles__item-small__date">13 октября</span>
+          </div>
+      
+          <div class="articles__item articles__item-social">
+            <h1 class="articles__title articles__item-social__title">
+              Наши соцсети
+            </h1>
+            <div class="articles__network">
+              <a class="articles__item-social__link" href="#">
+                <img class="articles__item-social__icon articles__facebook" src="img/articles/facebook.svg" alt="иконка: facebook">
+              </a>
+              <a class="articles__item-social__link articles__twitter" href="#">
+                <img class="articles__item-social__icon" src="img/articles/twitter.svg" alt="иконка: twitter">
+              </a>
+              <a class="articles__item-social__link" href="#">
+                <img class="articles__item-social__icon" src="img/articles/youtube.svg" alt="иконка: youtube">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <div class="success-form">
+      <div class="modal__overlay"></div>
+      <div class="success-form__wrapper">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <img class="success-form__photo" src="img/checked.svg" alt="иконка: успех">
+        <h1 class="success-form__title">Сообщение отправлено</h1>
+        <span class="success-form__text">Спасибо за обращение! Наш менеджер свяжется с Вами через 5 минут.</span>
+      </div>
+    </div>
     <div class="modal">
       <div class="modal__overlay"></div>
-
       <div class="modal__dialog">
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title">Оставить заявку</h3>
-        <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Ваше имя*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
-            type="tel"
-            class="input modal__input"
-            placeholder="Номер телефона*"
-            name="phone"
-            required
-          />
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
+        <form class="modal__form form">
+          <div class="parent">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Ваше имя*"
+              name="name"
+              
+              minlength="2"
+            />
+          </div>
+          <div class="parent">
+            <input
+              type="tel"
+              class="input modal__input request-form-phone"
+              placeholder="Номер телефона*"
+              name="phone"
+              
+            />
+          </div>
+          <div class="parent">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              
+            />
+          </div>
           <textarea
             class="message modal__message"
             placeholder="Сообщение"
             name="message"
           ></textarea>
-          <button class="button modal__button" type="submit">Отправить</button>
-          <span class="modal__info">* Обязательные поля</span>
+          <div class="modal-wrapper__button">
+            <button class="button modal__button" type="submit">
+              Отправить
+            </button>
+            <span class="modal__info">* Обязательные поля</span>
+          </div>
         </form>
       </div>
     </div>
     <script src="js/index.js"></script>
+    <script src="js/phoneValidator.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/form.js"></script>
+
   </body>
 </html>

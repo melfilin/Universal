@@ -1,11 +1,11 @@
 const modal = document.querySelector('.modal__dialog');
 const modalOverlay = document.querySelector('.modal__overlay');
 const navbarButton = document.querySelector('.navbar-button');
-const modalCloseBtn = document.querySelector('.modal__close');
+const modalCloseBtn = document.querySelectorAll('.modal__close');
 
 modalOverlay.addEventListener('click', modalClose);
 navbarButton.addEventListener('click', modalOpen);
-modalCloseBtn.addEventListener('click', modalClose);
+modalCloseBtn.forEach((close) => close.addEventListener('click', modalClose));
 document.addEventListener('keydown', clickDocument);
 
 function modalOpen() {
@@ -23,4 +23,5 @@ function modalClose() {
 function clickDocument(e) {
   if (e.keyCode !== 27) return;
   modalClose();
+  successClose();
 }
