@@ -28,3 +28,32 @@ body {
   margin: auto;
   overflow: hidden;
 }
+
+.icon-facebook {
+  fill: #4267b2;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-twitter {
+  fill: #1da1f2;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-youtube {
+  fill: #ff0000;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.icon-download {
+  fill: #fff;
+  display: block;
+  width: 20px;
+  height: 20px;
+  z-index: 110;
+}

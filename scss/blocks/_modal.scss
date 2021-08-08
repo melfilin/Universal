@@ -29,11 +29,13 @@
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.4s;
-
     &--visible {
       visibility: visible;
       opacity: 1;
       overflow: hidden;
+      height: 560px;
+      max-height: 90%;
+      overflow: scroll;
     }
   }
 

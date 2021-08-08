@@ -29,19 +29,61 @@
   }
   .articles {
     &__item {
+      &-work:hover {
+        filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.15));
+        transition: 0.3s;
+      }
+      &-project:hover {
+        filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.15));
+        transition: 0.3s;
+      }
       &-tags {
         &__tag:hover {
           border: 1px solid #4592ff;
           cursor: pointer;
         }
       }
+      &-check {
+        &__block:hover {
+          color: #20477d;
+          transition: 0.3s;
+          span:hover {
+            color: #20477d;
+            transition: 0.3s;
+          }
+        }
+      }
+      &-tool:hover {
+        filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.15));
+        transition: 0.3s;
+      }
+      &-small:hover {
+        filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.15));
+        transition: 0.3s;
+      }
     }
+  }
+  .check-wrapper:hover {
+    color: #20477d;
+    transition: 0.3s;
   }
   .modal {
     &__button:hover {
       background: #20477d;
       color: #fff;
     }
+  }
+  .icon-facebook:hover {
+    fill: #20477d;
+  }
+  .icon-twitter:hover {
+    fill: #20477d;
+  }
+  .icon-youtube:hover {
+    fill: #20477d;
+  }
+  .icon-download:hover {
+    fill: #20477d;
   }
 }
 
@@ -462,6 +504,7 @@
     &__dialog {
       padding: 30px 30px;
       height: 90%;
+      max-height: 560px;
       overflow: scroll;
     }
     &__input {

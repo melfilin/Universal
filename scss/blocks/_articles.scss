@@ -20,6 +20,13 @@
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
   }
+  &__link {
+    &-small {
+      &--2 {
+        text-decoration: none;
+      }
+    }
+  }
   &-author {
     max-width: 212px;
     display: flex;
@@ -102,6 +109,7 @@
   }
 
   &__item {
+    text-decoration: none;
     padding-left: 25px;
     border-radius: 10px;
     background: #fff;
@@ -186,7 +194,7 @@
         font-size: 14px;
         color: #c1f4f5;
       }
-      &__down {
+      &__downl {
         text-decoration: none;
         font-weight: 700;
         font-size: 14px;
@@ -203,12 +211,17 @@
         border-bottom: 1px solid #96e2e3;
       }
       &__block {
+        text-decoration: none;
         padding-top: 12px;
-        padding-left: 90px;
-        max-width: 83px;
+        padding-left: 85px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        span {
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 14px;
+          color: $font-white;
+        }
       }
     }
     &-tool {
@@ -238,6 +251,7 @@
         font-weight: 700;
         font-size: 16px;
         margin-bottom: 8px;
+        text-decoration: none;
       }
       &__info {
         display: inline-block;
@@ -252,6 +266,7 @@
       &__date {
         font-size: 12px;
         color: #939699;
+        text-decoration: none;
         &--20 {
           font-size: 12px;
           color: #939699;
@@ -303,6 +318,11 @@
       &__link {
         text-decoration: none;
       }
+    }
+  }
+  &-work {
+    &__photo {
+      border-radius: 10px;
     }
   }
   &__network {

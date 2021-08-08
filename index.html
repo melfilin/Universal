@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    
     <header class="navbar">
       <div class="container">
         <div class="navbar-wrapper navbar-wrapper__mobile-hidden">
@@ -191,51 +192,55 @@
     <section class="articles">
       <div class="container">
         <div class="articles-wrapper">
-          <div class="articles__item articles__item-work">
-            <div class="articles__item-work__top">
-              <div class="articles__item-work__content">
-                <h2 class="articles__subtitle articles__item-work__subtitle">Статьи</h2>
-                <h1 class="articles__title articles__item-work__title">
-                  Вам предложили работу мечты, но вы не можете...
-                </h1>
-                <span class="articles__item-work__info"
-                  >Как поступить, если хочется пойти на работу мечты, но она находится
-                  в другом городе. У вас семья и переезжать вы не готовы.
-                </span>
+          
+            <a href="#" class="articles__item articles__item-work">
+              <div class="articles__item-work__top">
+                <div class="articles__item-work__content">
+                  <h2 class="articles__subtitle articles__item-work__subtitle">Статьи</h2>
+                  <h1 class="articles__title articles__item-work__title">
+                    Вам предложили работу мечты, но вы не можете...
+                  </h1>
+                  <span class="articles__item-work__info"
+                    >Как поступить, если хочется пойти на работу мечты, но она находится
+                    в другом городе. У вас семья и переезжать вы не готовы.
+                  </span>
+                </div>
+                <img src="img/articles/car.png" alt="фото: машина" class="articles-work__photo" />
               </div>
-              <img src="img/articles/car.png" alt="фото: машина" class="articles-work__photo" />
-            </div>
-            <div class="articles-author__work">
-              <img src="img/articles/user-articles.png" alt="фото: Инна Квашова" class="articles-author__photo-work" />
-              <span class="articles-author__name-work">Инна Квашова:</span>
-              <span class="articles-author__quote"
-                >Каждый разработчик мечтает переехать в...</span
-              >
-              <img src="img/articles/comment-gray.svg" alt="Иконка: письмо" class="articles__icon-work" />
-              <span class="articles__number-work">342</span>
-            </div>
-          </div>
+              <div class="articles-author__work">
+                <img src="img/articles/user-articles.png" alt="фото: Инна Квашова" class="articles-author__photo-work" />
+                <span class="articles-author__name-work">Инна Квашова:</span>
+                <span class="articles-author__quote"
+                  >Каждый разработчик мечтает переехать в...</span
+                >
+                <img src="img/articles/comment-gray.svg" alt="Иконка: письмо" class="articles__icon-work" />
+                <span class="articles__number-work">342</span>
+              </div>
+            </a>
+          
   
-          <div class="articles__item articles__item-project">
-            <span class="articles__item-project__popular">Популярное</span>
-            <h2 class="articles__subtitle articles__item-project__subtitle">Web design</h2>
-            <h1 class="articles__title articles__item-project__title">
-              Где взять реальные проекты для портфолио
-            </h1>
-            <div class="articles-author">
-              <img src="img/articles/user-articles.png" alt="фотоЖ Сара Женникова" class="articles-author__photo-project" />
-              <div class="articles-author__text">
-                <span class="articles-author__name">Сара Женникова</span>
-                <div class="articles-author__stat">
-                  <span class="articles-author__date">25 сентября</span>
-                  <img src="img/articles/comment.svg" alt="Иконка: письмо" class="articles__icon" />
-                  <span class="articles__number">16</span>
-                  <img src="img/articles/heart.svg" alt="Иконка: лайк" class="articles__icon" />
-                  <span class="articles__number--16">832</span>
+          
+            <a href="#" class="articles__item articles__item-project">
+              <span class="articles__item-project__popular">Популярное</span>
+              <h2 class="articles__subtitle articles__item-project__subtitle">Web design</h2>
+              <h1 class="articles__title articles__item-project__title">
+                Где взять реальные проекты для портфолио
+              </h1>
+              <div class="articles-author">
+                <img src="img/articles/user-articles.png" alt="фотоЖ Сара Женникова" class="articles-author__photo-project" />
+                <div class="articles-author__text">
+                  <span class="articles-author__name">Сара Женникова</span>
+                  <div class="articles-author__stat">
+                    <span class="articles-author__date">25 сентября</span>
+                    <img src="img/articles/comment.svg" alt="Иконка: письмо" class="articles__icon" />
+                    <span class="articles__number">16</span>
+                    <img src="img/articles/heart.svg" alt="Иконка: лайк" class="articles__icon" />
+                    <span class="articles__number--16">832</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </a>
+          
   
           <div class="articles__item articles__item-check">
             <div class="articles__item-check__text">
@@ -244,38 +249,43 @@
               </h1>
               <span class="articles__item-check__size">PDF, 125 Мб</span>
             </div>
-            <div class="articles__item-check__block">
-              <img src="img/articles/download.svg" alt="иконка: скачать" class="articles__item-check__icon" />
-              <a href="files/empty.pdf" download class="articles__item-check__down" href="#">Скачать</a>
-            </div>
+            <a href="files/empty.pdf" download href="#" class="articles__item-check__block">
+              <svg class="icon-download articles__item-check__icon">
+                <use xlink:href="sprite.svg#download">
+                </use>
+              </svg>
+              <span>Скачать</span>
+            </a>
           </div>
           
-          <div class="articles__item articles__item-tool">
+          <a href="#" class="articles__item articles__item-tool">
             <img src="img/articles/tool.png" alt="фото: ноутбук" class="articles__item-tool__photo" />
             <h1 class="articles__title articles__item-tool__title">
               20+ инструментов для js-разработчика
             </h1>
-          </div>
+          </a>
     
-          <div class="articles__item articles__item-small">
-            <h1 class="articles__title articles__item-small__title">
-              Удачные референсы
-            </h1>
-            <span class="articles__item-small__info articles__item-small--25 articles__item-small__info--10">
-            Как выбрать подходящие исходники, если вы ищите идею для интерфейса
-            </span>
-            <span class="articles__item-small__date--20">15 октября</span>
-          </div>
+            <a href="#" class="articles__item articles__item-small">
+              <h1 class="articles__title articles__item-small__title">
+                Удачные референсы
+              </h1>
+              <span class="articles__item-small__info articles__item-small--25 articles__item-small__info--10">
+              Как выбрать подходящие исходники, если вы ищите идею для интерфейса
+              </span>
+              <span class="articles__item-small__date--20">15 октября</span>
+            </a>
     
-          <div class="articles__item articles__item-small">
-            <h1 class="articles__title articles__item-small__title">
-              Заказчики — мудаки?
-            </h1>
-            <span class="articles__item-small__info articles__item-small__info--20">
-              Как защититься от бесконечных правок на этапе сдачи проекта
-            </span>
-            <span class="articles__item-small__date">20 октября</span>
-          </div>
+          <a href="#" class="articles__link-small--2">
+            <div class="articles__item articles__item-small">
+              <h1 class="articles__title articles__item-small__title">
+                Заказчики — мудаки?
+              </h1>
+              <span class="articles__item-small__info articles__item-small__info--20">
+                Как защититься от бесконечных правок на этапе сдачи проекта
+              </span>
+              <span class="articles__item-small__date">20 октября</span>
+            </div>
+          </a>
     
           <div class="articles__item articles__item-tags">
             <h1 class="articles__title articles__item-tags__title">
@@ -284,39 +294,51 @@
            <div class="articles__item-tags__wrapper"><span class="articles__item-tags__tag">Forest</span><span class="articles__item-tags__tag">Hover tag</span><span class="articles__item-tags__tag">Nature</span><span class="articles__item-tags__tag">Recreation</span><span class="articles__item-tags__tag">Tent</span><span class="articles__item-tags__tag">Fresh air</span><span class="articles__item-tags__tag">Summer</span><span class="articles__item-tags__tag">Mountains</span><span class="articles__item-tags__tag">Wood</span><span class="articles__item-tags__tag">Map</span><span class="articles__item-tags__tag">Sun</span><span class="articles__item-tags__tag">Wild animals</span><span class="articles__item-tags__tag">Night</span></div>
           </div>
           
-          <div class="articles__item articles__item-small">
-            <h1 class="articles__title articles__item-small__title">
-              Работа без стресса — это...
-            </h1>
-            <span class="articles__item-small__info">
-              Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего... 
-            </span>
-            <span class="articles__item-small__date">26 октября</span>
-          </div>
+            <a href="#" class="articles__item articles__item-small">
+              <h1 class="articles__title articles__item-small__title">
+                Работа без стресса — это...
+              </h1>
+              <span class="articles__item-small__info">
+                Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего... 
+              </span>
+              <span class="articles__item-small__date">26 октября</span>
+            </a>
       
-          <div class="articles__item articles__item-small">
-            <h1 class="articles__title articles__item-small__title">
-              Бесплатные методы...
-            </h1>
-            <span class="articles__item-small__info articles__item-small--25">
-              Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения
-            </span>
-            <span class="articles__item-small__date">13 октября</span>
-          </div>
-      
+            <a href="#" class="articles__item articles__item-small">
+              <h1 class="articles__title articles__item-small__title">
+                Бесплатные методы...
+              </h1>
+              <span class="articles__item-small__info articles__item-small--25">
+                Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения
+              </span>
+              <span class="articles__item-small__date">13 октября</span>
+            </a>
+           
+          
+
           <div class="articles__item articles__item-social">
             <h1 class="articles__title articles__item-social__title">
               Наши соцсети
             </h1>
             <div class="articles__network">
               <a class="articles__item-social__link" href="#">
-                <img class="articles__item-social__icon articles__facebook" src="img/articles/facebook.svg" alt="иконка: facebook">
+                <svg class="icon-facebook articles__item-social__icon articles__facebook">
+                  <use xlink:href="sprite.svg#facebook">
+                  </use>
+                </svg>
               </a>
               <a class="articles__item-social__link articles__twitter" href="#">
-                <img class="articles__item-social__icon" src="img/articles/twitter.svg" alt="иконка: twitter">
+                <svg class="icon-twitter articles__item-social__icon">
+                  <use xlink:href="sprite.svg#twitter">
+                  </use>
+                </svg>
               </a>
               <a class="articles__item-social__link" href="#">
-                <img class="articles__item-social__icon" src="img/articles/youtube.svg" alt="иконка: youtube">
+                <svg class="icon-youtube articles__item-social__icon">
+                  <use xlink:href="sprite.svg#youtube">
+                  </use>
+                </svg>
+                
               </a>
             </div>
           </div>
@@ -324,6 +346,41 @@
       </div>
       </div>
     </section>
+    <div class="mobile-menu">
+      <a href="#" class="modal__close-mobile">
+        <img src="img/close.svg" alt="icon: close" />
+      </a>
+      <a href="#" class="logo">
+        <img class="navbar__logo-mobile" src="img/Logo/logo-white.svg" alt="" />
+      </a>
+      <ul class="navbar-menu__mobile">
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">Статьи</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">Новости</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile " href="#"
+            >Горячее</a
+          >
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">HTML</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">CSS</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">JavaScript</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">Web Design</a>
+        </li>
+      </ul>
+      <a href="#" class="navbar-button__mobile">Оставить заявку</a>
+    </div>
+
     <div class="success-form">
       <div class="modal__overlay"></div>
       <div class="success-form__wrapper">
@@ -385,6 +442,7 @@
         </form>
       </div>
     </div>
+    <script src="js/navbar.js"></script>
     <script src="js/index.js"></script>
     <script src="js/phoneValidator.js"></script>
     <script src="js/modal.js"></script>
