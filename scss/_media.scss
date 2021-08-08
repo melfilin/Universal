@@ -47,10 +47,10 @@
         &__block:hover {
           color: #20477d;
           transition: 0.3s;
-          span:hover {
-            color: #20477d;
-            transition: 0.3s;
-          }
+          // span:hover {
+          //   color: #20477d;
+          //   transition: 0.3s;
+          // }
         }
       }
       &-tool:hover {
@@ -82,7 +82,8 @@
   .icon-youtube:hover {
     fill: #20477d;
   }
-  .icon-download:hover {
+  .icon-download,
+  .articles__text:hover {
     fill: #20477d;
   }
 }
@@ -384,6 +385,11 @@
       }
     }
   }
+  .insert {
+    &__title {
+      font-size: 32px;
+    }
+  }
   .modal {
     &__dialog {
       padding: 40px 40px;
@@ -498,6 +504,11 @@
       &-work {
         display: none;
       }
+    }
+  }
+  .insert {
+    &__title {
+      font-size: 25px;
     }
   }
   .modal {
@@ -656,6 +667,12 @@
       &-work {
         display: initial;
       }
+    }
+  }
+  .insert {
+    &__title {
+      font-size: 22px;
+      line-height: 40px;
     }
   }
 }
