@@ -93,12 +93,52 @@
     color: #20477d;
     transition: 0.3s;
   }
+  .offers {
+    &-slider {
+      &__button:hover {
+        background: #20477d;
+        transition: 0.3s;
+      }
+    }
+    &-career {
+      &__button:hover {
+        background: #20477d;
+        transition: 0.3s;
+      }
+    }
+    &-workout:hover {
+      background: #e9e9e9;
+      transition: 0.3s;
+    }
+    &-plagins:hover {
+      background: #e9e9e9;
+      transition: 0.3s;
+    }
+  }
+  .footer {
+    &__button:hover {
+      background: #20477d;
+      transition: 0.3s;
+    }
+    &-links {
+      &__link:hover {
+        border-bottom: 4px solid #4592ff;
+      }
+    }
+    &-social {
+      &__item:hover {
+        color: #4592ff;
+      }
+    }
+  }
+
   .modal {
     &__button:hover {
       background: #20477d;
       color: #fff;
     }
   }
+
   .icon-facebook:hover {
     fill: #20477d;
   }
@@ -110,6 +150,9 @@
   }
   .icon-download:hover,
   .articles__text:hover {
+    fill: #20477d;
+  }
+  .icon-instagram:hover {
     fill: #20477d;
   }
 }
@@ -254,6 +297,36 @@
       &__title {
         font-size: 15px;
         line-height: 20px;
+      }
+      &__text {
+        font-size: 12px;
+      }
+    }
+  }
+  .offers {
+    &-slider {
+      &__title {
+        font-size: 30px;
+      }
+    }
+    &-career {
+      padding-left: 20px;
+      background-position: top 0 right -110px;
+      background-repeat: no-repeat;
+    }
+    &-workout {
+      padding: 18px 15px 5px 20px;
+      &__title {
+        font-size: 15px;
+      }
+      &__text {
+        font-size: 12px;
+      }
+    }
+    &-plagins {
+      padding: 18px 15px 5px 20px;
+      &__title {
+        font-size: 15px;
       }
       &__text {
         font-size: 12px;
@@ -500,6 +573,41 @@
       }
     }
   }
+  .offers {
+    &-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+    &-slider {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      grid-column: span 2;
+      grid-row: span 2;
+      &__title {
+        font-size: 28px;
+        max-width: 550px;
+        line-height: 40px;
+      }
+    }
+    &-career {
+      grid-column: span 2;
+      grid-row: span 2;
+      background-position: top 0 right 0;
+      background-repeat: no-repeat;
+      &__title {
+        font-size: 28px;
+      }
+      &__button {
+        padding: 12px 40px;
+      }
+      &__text {
+        max-width: none;
+      }
+    }
+    &__arrow {
+      margin-left: 10px;
+    }
+  }
   .modal {
     &__dialog {
       padding: 40px 40px;
@@ -664,6 +772,13 @@
       }
     }
   }
+  .offers {
+    &-slider {
+      &__title {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -810,6 +925,41 @@
       }
     }
   }
+  .offers {
+    &__arrow {
+      margin: 0;
+    }
+    &-wrapper {
+      grid-template-rows: repeat(3, min-content);
+    }
+    &-slider {
+      grid-row: span 1;
+    }
+    &-career {
+      padding-bottom: 35px;
+      padding-right: 20px;
+      grid-row: span 1;
+      background: none;
+      background-color: #b4d1e0;
+      &__info {
+        max-width: none;
+      }
+      &__title {
+        font-size: 25px;
+      }
+      &__button {
+        padding: 12px 22px;
+      }
+    }
+    &-workout {
+      grid-column: span 2;
+      padding: 20px 15px 20px 20px;
+    }
+    &-plagins {
+      grid-column: span 2;
+      padding: 20px 15px 20px 20px;
+    }
+  }
 }
 @media (max-width: 395px) {
   .hero {
@@ -828,6 +978,15 @@
     &-author {
       &__name {
         &-work {
+          display: none;
+        }
+      }
+    }
+  }
+  .offers {
+    &-slider {
+      &__button {
+        &-icon {
           display: none;
         }
       }

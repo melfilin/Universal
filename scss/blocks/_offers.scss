@@ -1,0 +1,180 @@
+.offers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #262d33;
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 170px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  &__item {
+    border-radius: 10px;
+  }
+  &-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    &__image {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-bottom: 8px;
+    }
+    &__name {
+      color: #e2e1e1;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    &__prof {
+      color: #968f8d;
+      font-size: 12px;
+    }
+  }
+  &-slider {
+    grid-column: span 2;
+    grid-row: span 3;
+    background: linear-gradient(
+        0deg,
+        rgba(64, 48, 61, 0.35),
+        rgba(64, 48, 61, 0.35)
+      ),
+      url(../img/offers/slider-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      font-family: Roboto Slab, serif;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 50px;
+      color: $font-white;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 45px;
+    }
+    &__button {
+      display: flex;
+      align-items: center;
+      border: none;
+      background: $blue;
+      color: $font-white;
+      padding: 11px 20px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      &-icon {
+        margin-right: 9px;
+      }
+      &-text {
+        margin-right: 8px;
+      }
+    }
+  }
+  &-career {
+    background: url(../img/offers/people.png), #b4d1e0;
+    position: relative;
+    padding-top: 35px;
+    padding-left: 35px;
+    grid-column: span 2;
+    grid-row: span 2;
+    &__info {
+      max-width: 243px;
+    }
+
+    &__theme {
+      color: #6e99ae;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-family: Roboto Slab, serif;
+      color: #262d33;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 30px;
+      margin: 0;
+      margin-bottom: 15px;
+    }
+    &__text {
+      display: block;
+      color: #4b5157;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 55px;
+      max-width: 213px;
+    }
+    &__button {
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      color: $font-white;
+      background: #4592ff;
+      border-radius: 20px;
+      padding: 12px 22px;
+    }
+  }
+
+  &-workout {
+    padding: 31px 25px 30px 25px;
+    text-decoration: none;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      color: #262d33;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    &__text {
+      color: #4b5157;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+    &__date {
+      color: #939699;
+      font-size: 12px;
+    }
+  }
+
+  &-plagins {
+    padding: 31px 25px 30px 25px;
+    text-decoration: none;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      color: #262d33;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    &__text {
+      color: #4b5157;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+    &__date {
+      color: #939699;
+      font-size: 12px;
+    }
+  }
+}

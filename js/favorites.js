@@ -4,11 +4,6 @@ const favoritesStore = JSON.parse(localStorage.getItem('favorites')) || [];
 
 favorites.forEach((favorite, index) => {
   favorite.setAttribute('data-id', index);
-  console.log(index, favoritesStore[index]?.id);
-  if (favoritesStore.length && index === favoritesStore[index]?.id) {
-    favorite.classList.add('active');
-  }
-
   favorite.addEventListener('click', () => {
     if (favorite.classList[1] === 'active') {
       removeFromStoreById(index);
@@ -19,6 +14,11 @@ favorites.forEach((favorite, index) => {
       addToStore();
     }
   });
+});
+
+favoritesStore.forEach((favorite) => {
+  const favoriteNode = document.querySelector(`[data-id="${favorite.id}"]`);
+  favoriteNode.classList.add('active');
 });
 
 function removeFromStoreById(id) {
