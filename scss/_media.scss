@@ -8,12 +8,14 @@
     &-button:hover {
       background: #4592ff;
       color: #fff;
+      transition: 0.3s;
     }
   }
   .hero {
     &-image {
       &__button:hover {
         background: #20477d;
+        transition: 0.3s;
       }
     }
     &-tabs {
@@ -47,10 +49,6 @@
         &__block:hover {
           color: #20477d;
           transition: 0.3s;
-          // span:hover {
-          //   color: #20477d;
-          //   transition: 0.3s;
-          // }
         }
       }
       &-tool:hover {
@@ -59,6 +57,34 @@
       }
       &-small:hover {
         filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.15));
+        transition: 0.3s;
+      }
+    }
+    &__text:hover {
+      color: #20477d;
+      transition: 0.3s;
+    }
+  }
+  .insert {
+    &__button:hover {
+      background: #20477d;
+      transition: 0.3s;
+    }
+  }
+  .news {
+    &-main {
+      &__title:hover {
+        color: #4592ff;
+        transition: 0.3s;
+      }
+    }
+    &-recent {
+      &__item:hover {
+        background: #f5f5f5;
+        transition: 0.3s;
+      }
+      &__more:hover {
+        background: #f5f5f5;
         transition: 0.3s;
       }
     }
@@ -82,12 +108,11 @@
   .icon-youtube:hover {
     fill: #20477d;
   }
-  .icon-download,
+  .icon-download:hover,
   .articles__text:hover {
     fill: #20477d;
   }
 }
-
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -215,6 +240,24 @@
     }
     &__twitter {
       margin-right: 12px;
+    }
+  }
+  .news {
+    &-main {
+      &__item {
+        padding: 15px;
+        padding-bottom: 0;
+      }
+      &__theme {
+        margin-bottom: 10px;
+      }
+      &__title {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      &__text {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -390,6 +433,73 @@
       font-size: 32px;
     }
   }
+  .news {
+    &-wrapper {
+      flex-direction: column;
+    }
+    &-main {
+      margin-right: 0;
+      margin-bottom: 30px;
+
+      &__item {
+        height: auto;
+        padding: 0px 24px 25px 25px;
+        &--first {
+          padding-top: 25px;
+        }
+        &--last {
+          padding-bottom: 0;
+        }
+      }
+      &__theme {
+        margin-bottom: 15px;
+      }
+      &__title {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+    }
+    &-recent {
+      max-width: none;
+      &__title {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      &__items {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &__item {
+        width: 50%;
+        &--7 {
+          width: 100%;
+        }
+      }
+      &__item {
+        &--1 {
+          border-right: 1px solid #d9dadb;
+        }
+        &--3 {
+          border-right: 1px solid #d9dadb;
+        }
+        &--5 {
+          border-right: 1px solid #d9dadb;
+        }
+      }
+
+      &__link {
+        &--7 {
+          justify-content: start;
+        }
+      }
+      &__more {
+        text-align: center;
+      }
+    }
+  }
   .modal {
     &__dialog {
       padding: 40px 40px;
@@ -509,6 +619,23 @@
   .insert {
     &__title {
       font-size: 25px;
+    }
+  }
+  .news {
+    &-main {
+      &__border {
+        flex-direction: column;
+      }
+      &__image {
+        width: 100%;
+      }
+      &__info {
+        margin-left: 0;
+        padding-top: 10px;
+      }
+      &__favorite {
+        top: 8px;
+      }
     }
   }
   .modal {
@@ -673,6 +800,14 @@
     &__title {
       font-size: 22px;
       line-height: 40px;
+    }
+  }
+  .news {
+    &-recent {
+      &__item {
+        width: 100%;
+        border-right: none;
+      }
     }
   }
 }
