@@ -25,10 +25,10 @@
     padding: 10px 15px 10px 15px;
     font-size: 14px;
     line-height: 20px;
-    color: #939699;
     outline: 0;
   }
   &__button {
+    min-width: 135px;
     cursor: pointer;
     align-self: start;
     background-color: #4592ff;

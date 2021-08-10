@@ -1,0 +1,8 @@
+// Подключение style.scss
+@import 'style';
+
+// Подключение стилей для блока header
+@import 'blocks-article/header';
+
+// Подключение стилей для адаптива
+@import 'media-article';

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новости</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="./img/newspaper.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/newspaper.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/article.css" />
+  </head>
+</html>
+<html>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-wrapper navbar-wrapper__mobile-hidden">
+          <a href="index.html" class="logo">
+            <img class="navbar__logo" src="img/Logo/logo-white.svg" alt="" />
+          </a>
+          <ul class="navbar-menu">
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__link" href="#">Статьи</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__link" href="#">Новости</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__link navbar-menu__link--hot" href="#"
+                >Горячее</a
+              >
+            </li>
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__link" href="#">HTML</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__link" href="#">CSS</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__link" href="#">JavaScript</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__link" href="#">Web Design</a>
+            </li>
+          </ul>
+          <a href="#" class="navbar-button">Оставить заявку</a>
+          <button class="navbar-menu__button">
+            <span class="navbar-menu__line"></span
+            ><span class="navbar-menu__line"></span
+            ><span class="navbar-menu__line"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <a href="#" class="modal__close-mobile">
+        <img src="img/close.svg" alt="icon: close" />
+      </a>
+      <a href="#" class="logo">
+        <img class="navbar__logo-mobile" src="img/Logo/logo-white.svg" alt="" />
+      </a>
+      <ul class="navbar-menu__mobile">
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">Статьи</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">Новости</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">Горячее</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">HTML</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">CSS</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">JavaScript</a>
+        </li>
+        <li class="navbar-menu__item-mobile">
+          <a class="navbar-menu__link-mobile" href="#">Web Design</a>
+        </li>
+      </ul>
+      <a href="#" class="navbar-button__mobile">Оставить заявку</a>
+    </div>
+
+    <div class="success-form">
+      <div class="modal__overlay"></div>
+      <div class="success-form__wrapper">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <img
+          class="success-form__photo"
+          src="img/checked.svg"
+          alt="иконка: успех"
+        />
+        <h1 class="success-form__title">Сообщение отправлено</h1>
+        <span class="success-form__text"
+          >Спасибо за обращение! Наш менеджер свяжется с Вами через 5
+          минут.</span
+        >
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title">Оставить заявку</h3>
+        <form class="modal__form form" novalidate>
+          <div class="parent">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Ваше имя*"
+              name="name"
+              minlength="2"
+            />
+          </div>
+          <div class="parent">
+            <input
+              type="tel"
+              class="input modal__input request-form-phone"
+              placeholder="Номер телефона*"
+              name="phone"
+            />
+          </div>
+          <div class="parent">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+            />
+          </div>
+          <textarea
+            class="message modal__message"
+            placeholder="Сообщение"
+            name="message"
+          ></textarea>
+          <div class="modal-wrapper__button">
+            <button class="button modal__button" type="submit">
+              Отправить
+            </button>
+            <span class="modal__info">* Обязательные поля</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/navbar.js"></script>
+    <script src="js/phoneValidator.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/form.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+</html>

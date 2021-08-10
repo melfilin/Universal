@@ -1,0 +1,43 @@
+.navbar {
+  background-color: $background;
+  margin-bottom: 28px;
+  position: relative;
+  &-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+      color: $font-white;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      &--hot {
+        margin-left: -4px;
+      }
+    }
+    &__button {
+      display: none;
+    }
+  }
+  &-button {
+    padding: 12px 63px 12px 64px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $font-white;
+    font-size: 14px;
+    background-color: #656b70;
+    font-weight: 400;
+  }
+}

@@ -3,7 +3,11 @@ const modalOverlay = document.querySelector('.modal__overlay');
 const navbarButton = document.querySelector('.navbar-button');
 const navbarButtonMobile = document.querySelector('.navbar-button__mobile');
 const modalCloseBtn = document.querySelectorAll('.modal__close');
+const partner = document.querySelector('.footer-social__item--partner');
 
+if (partner) {
+  partner.addEventListener('click', modalOpen);
+}
 modalOverlay.addEventListener('click', modalClose);
 navbarButton.addEventListener('click', modalOpen);
 navbarButtonMobile.addEventListener('click', () => {

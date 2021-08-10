@@ -11,18 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="shortcut icon" href="./img/newspaper.ico" type="image/x-icon" />
     <link rel="icon" href="./img/newspaper.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
-    
     <header class="navbar">
       <div class="container">
         <div class="navbar-wrapper navbar-wrapper__mobile-hidden">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img class="navbar__logo" src="img/Logo/logo-white.svg" alt="" />
           </a>
           <ul class="navbar-menu">
@@ -80,7 +82,7 @@
             <div class="hero-text">
               <h2 class="subtitle hero-subtitle">Javascript</h2>
               <h1 class="hero-title">Расширение Chrome защищает от атак</h1>
-              <a class="hero-image__button" href="#">
+              <a class="hero-image__button" href="article.html" target="_blank">
                 Читать далее
                 <img
                   class="hero-image__button-img"
@@ -193,56 +195,81 @@
     <section class="articles">
       <div class="container">
         <div class="articles-wrapper">
-          
-            <a href="#" class="articles__item articles__item-work">
-              <div class="articles__item-work__top">
-                <div class="articles__item-work__content">
-                  <h2 class="articles__subtitle articles__item-work__subtitle">Статьи</h2>
-                  <h1 class="articles__title articles__item-work__title">
-                    Вам предложили работу мечты, но вы не можете...
-                  </h1>
-                  <span class="articles__item-work__info"
-                    >Как поступить, если хочется пойти на работу мечты, но она находится
-                    в другом городе. У вас семья и переезжать вы не готовы.
-                  </span>
+          <a href="#" class="articles__item articles__item-work">
+            <div class="articles__item-work__top">
+              <div class="articles__item-work__content">
+                <h2 class="articles__subtitle articles__item-work__subtitle">
+                  Статьи
+                </h2>
+                <h1 class="articles__title articles__item-work__title">
+                  Вам предложили работу мечты, но вы не можете...
+                </h1>
+                <span class="articles__item-work__info"
+                  >Как поступить, если хочется пойти на работу мечты, но она
+                  находится в другом городе. У вас семья и переезжать вы не
+                  готовы.
+                </span>
+              </div>
+              <img
+                src="img/articles/car.png"
+                alt="фото: машина"
+                class="articles-work__photo"
+              />
+            </div>
+            <div class="articles-author__work">
+              <img
+                src="img/articles/user-articles.png"
+                alt="фото: Инна Квашова"
+                class="articles-author__photo-work"
+              />
+              <span class="articles-author__name-work">Инна Квашова:</span>
+              <span class="articles-author__quote"
+                >Каждый разработчик мечтает переехать в...</span
+              >
+              <img
+                src="img/articles/comment-gray.svg"
+                alt="Иконка: письмо"
+                class="articles__icon-work"
+              />
+              <span class="articles__number-work">342</span>
+            </div>
+          </a>
+
+          <a href="#" class="articles__item articles__item-project">
+            <span class="articles__item-project__popular">Популярное</span>
+            <h2 class="articles__subtitle articles__item-project__subtitle">
+              Web design
+            </h2>
+            <h1 class="articles__title articles__item-project__title">
+              Где взять реальные проекты для портфолио
+            </h1>
+            <div class="articles-author">
+              <img
+                src="img/articles/user-articles.png"
+                alt="фотоЖ Сара Женникова"
+                class="articles-author__photo-project"
+              />
+              <div class="articles-author__text">
+                <span class="articles-author__name">Сара Женникова</span>
+                <div class="articles-author__stat">
+                  <span class="articles-author__date">25 сентября</span>
+                  <img
+                    src="img/articles/comment.svg"
+                    alt="Иконка: письмо"
+                    class="articles__icon"
+                  />
+                  <span class="articles__number">16</span>
+                  <img
+                    src="img/articles/heart.svg"
+                    alt="Иконка: лайк"
+                    class="articles__icon"
+                  />
+                  <span class="articles__number--16">832</span>
                 </div>
-                <img src="img/articles/car.png" alt="фото: машина" class="articles-work__photo" />
               </div>
-              <div class="articles-author__work">
-                <img src="img/articles/user-articles.png" alt="фото: Инна Квашова" class="articles-author__photo-work" />
-                <span class="articles-author__name-work">Инна Квашова:</span>
-                <span class="articles-author__quote"
-                  >Каждый разработчик мечтает переехать в...</span
-                >
-                <img src="img/articles/comment-gray.svg" alt="Иконка: письмо" class="articles__icon-work" />
-                <span class="articles__number-work">342</span>
-              </div>
-            </a>
-          
-  
-          
-            <a href="#" class="articles__item articles__item-project">
-              <span class="articles__item-project__popular">Популярное</span>
-              <h2 class="articles__subtitle articles__item-project__subtitle">Web design</h2>
-              <h1 class="articles__title articles__item-project__title">
-                Где взять реальные проекты для портфолио
-              </h1>
-              <div class="articles-author">
-                <img src="img/articles/user-articles.png" alt="фотоЖ Сара Женникова" class="articles-author__photo-project" />
-                <div class="articles-author__text">
-                  <span class="articles-author__name">Сара Женникова</span>
-                  <div class="articles-author__stat">
-                    <span class="articles-author__date">25 сентября</span>
-                    <img src="img/articles/comment.svg" alt="Иконка: письмо" class="articles__icon" />
-                    <span class="articles__number">16</span>
-                    <img src="img/articles/heart.svg" alt="Иконка: лайк" class="articles__icon" />
-                    <span class="articles__number--16">832</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          
-  
+            </div>
+          </a>
+
           <div class="articles__item articles__item-check">
             <div class="articles__item-check__text">
               <h1 class="articles__title articles__item-check__title">
@@ -250,111 +277,160 @@
               </h1>
               <span class="articles__item-check__size">PDF, 125 Мб</span>
             </div>
-            <a href="files/empty.pdf" download href="#" class="articles__item-check__block">
+            <a
+              href="files/empty.pdf"
+              download
+              href="#"
+              class="articles__item-check__block"
+            >
               <svg class="icon-download articles__item-check__icon">
-                <use xlink:href="sprite.svg#download">
-                </use>
+                <use xlink:href="sprite.svg#download"></use>
               </svg>
               <span class="articles__text">Скачать</span>
             </a>
           </div>
-          
+
           <a href="#" class="articles__item articles__item-tool">
-            <img src="img/articles/tool.png" alt="фото: ноутбук" class="articles__item-tool__photo" />
+            <img
+              src="img/articles/tool.png"
+              alt="фото: ноутбук"
+              class="articles__item-tool__photo"
+            />
             <h1 class="articles__title articles__item-tool__title">
               20+ инструментов для js-разработчика
             </h1>
           </a>
-    
-            <a href="#" class="articles__item articles__item-small">
-              <h1 class="articles__title articles__item-small__title">
-                Удачные референсы
-              </h1>
-              <span class="articles__item-small__info articles__item-small--25 articles__item-small__info--10">
-              Как выбрать подходящие исходники, если вы ищите идею для интерфейса
-              </span>
-              <span class="articles__item-small__date--20">15 октября</span>
-            </a>
-    
+
+          <a href="#" class="articles__item articles__item-small">
+            <h1 class="articles__title articles__item-small__title">
+              Удачные референсы
+            </h1>
+            <span
+              class="
+                articles__item-small__info
+                articles__item-small--25
+                articles__item-small__info--10
+              "
+            >
+              Как выбрать подходящие исходники, если вы ищите идею для
+              интерфейса
+            </span>
+            <span class="articles__item-small__date--20">15 октября</span>
+          </a>
+
           <a href="#" class="articles__link-small--2">
             <div class="articles__item articles__item-small">
               <h1 class="articles__title articles__item-small__title">
                 Заказчики — мудаки?
               </h1>
-              <span class="articles__item-small__info articles__item-small__info--20">
+              <span
+                class="
+                  articles__item-small__info articles__item-small__info--20
+                "
+              >
                 Как защититься от бесконечных правок на этапе сдачи проекта
               </span>
               <span class="articles__item-small__date">20 октября</span>
             </div>
           </a>
-    
+
           <div class="articles__item articles__item-tags">
-            <h1 class="articles__title articles__item-tags__title">
-              Теги
-            </h1>
-           <div class="articles__item-tags__wrapper"><span class="articles__item-tags__tag">Forest</span><span class="articles__item-tags__tag">Hover tag</span><span class="articles__item-tags__tag">Nature</span><span class="articles__item-tags__tag">Recreation</span><span class="articles__item-tags__tag">Tent</span><span class="articles__item-tags__tag">Fresh air</span><span class="articles__item-tags__tag">Summer</span><span class="articles__item-tags__tag">Mountains</span><span class="articles__item-tags__tag">Wood</span><span class="articles__item-tags__tag">Map</span><span class="articles__item-tags__tag">Sun</span><span class="articles__item-tags__tag">Wild animals</span><span class="articles__item-tags__tag">Night</span></div>
+            <h1 class="articles__title articles__item-tags__title">Теги</h1>
+            <div class="articles__item-tags__wrapper">
+              <span class="articles__item-tags__tag">Forest</span
+              ><span class="articles__item-tags__tag">Hover tag</span
+              ><span class="articles__item-tags__tag">Nature</span
+              ><span class="articles__item-tags__tag">Recreation</span
+              ><span class="articles__item-tags__tag">Tent</span
+              ><span class="articles__item-tags__tag">Fresh air</span
+              ><span class="articles__item-tags__tag">Summer</span
+              ><span class="articles__item-tags__tag">Mountains</span
+              ><span class="articles__item-tags__tag">Wood</span
+              ><span class="articles__item-tags__tag">Map</span
+              ><span class="articles__item-tags__tag">Sun</span
+              ><span class="articles__item-tags__tag">Wild animals</span
+              ><span class="articles__item-tags__tag">Night</span>
+            </div>
           </div>
-          
-            <a href="#" class="articles__item articles__item-small">
-              <h1 class="articles__title articles__item-small__title">
-                Работа без стресса — это...
-              </h1>
-              <span class="articles__item-small__info">
-                Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего... 
-              </span>
-              <span class="articles__item-small__date">26 октября</span>
-            </a>
-      
-            <a href="#" class="articles__item articles__item-small">
-              <h1 class="articles__title articles__item-small__title">
-                Бесплатные методы...
-              </h1>
-              <span class="articles__item-small__info articles__item-small--25">
-                Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения
-              </span>
-              <span class="articles__item-small__date">13 октября</span>
-            </a>
-           
-          
+
+          <a href="#" class="articles__item articles__item-small">
+            <h1 class="articles__title articles__item-small__title">
+              Работа без стресса — это...
+            </h1>
+            <span class="articles__item-small__info">
+              Обустройте свое рабочее место так, чтобы не испытывать раздражение
+              от скрипучего...
+            </span>
+            <span class="articles__item-small__date">26 октября</span>
+          </a>
+
+          <a href="#" class="articles__item articles__item-small">
+            <h1 class="articles__title articles__item-small__title">
+              Бесплатные методы...
+            </h1>
+            <span class="articles__item-small__info articles__item-small--25">
+              Как не платить за софт, если у вас есть студенческий билет высшего
+              учебного заведения
+            </span>
+            <span class="articles__item-small__date">13 октября</span>
+          </a>
 
           <div class="articles__item articles__item-social">
             <h1 class="articles__title articles__item-social__title">
               Наши соцсети
             </h1>
             <div class="articles__network">
-              <a class="articles__item-social__link" href="#">
-                <svg class="icon-facebook articles__item-social__icon articles__facebook">
-                  <use xlink:href="sprite.svg#facebook">
-                  </use>
+              <a
+                class="articles__item-social__link"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg
+                  class="
+                    icon-facebook
+                    articles__item-social__icon articles__facebook
+                  "
+                >
+                  <use xlink:href="sprite.svg#facebook"></use>
                 </svg>
               </a>
-              <a class="articles__item-social__link articles__twitter" href="#">
+              <a
+                class="articles__item-social__link articles__twitter"
+                href="https://twitter.com/"
+                target="_blank"
+              >
                 <svg class="icon-twitter articles__item-social__icon">
-                  <use xlink:href="sprite.svg#twitter">
-                  </use>
+                  <use xlink:href="sprite.svg#twitter"></use>
                 </svg>
               </a>
-              <a class="articles__item-social__link" href="#">
+              <a
+                class="articles__item-social__link"
+                href="https://www.youtube.com/"
+                target="_blank"
+              >
                 <svg class="icon-youtube articles__item-social__icon">
-                  <use xlink:href="sprite.svg#youtube">
-                  </use>
+                  <use xlink:href="sprite.svg#youtube"></use>
                 </svg>
-                
               </a>
             </div>
           </div>
         </div>
       </div>
-      </div>
     </section>
-    
+
     <section class="insert">
       <div class="container">
         <div class="insert-block">
-          <h2 class="insert__title">Расследование недели: сколько зарабатывает веб разработчик в Москве</h2>
+          <h2 class="insert__title">
+            Расследование недели: сколько зарабатывает веб разработчик в Москве
+          </h2>
           <a href="#" class="insert__button">
             <span>Читать статью</span>
-            <img src="img/insert/arrow.svg" alt="Стрелка вправо" class="insert__arrow">
+            <img
+              src="img/insert/arrow.svg"
+              alt="Стрелка вправо"
+              class="insert__arrow"
+            />
           </a>
         </div>
       </div>
@@ -367,22 +443,40 @@
             <div class="news-main__item news-main__item--first">
               <div class="news-main__border">
                 <div class="news-main__photo">
-                  <img  src="img/news/news-1.png" alt="Фото новости" class="news-main__image">
+                  <img
+                    src="img/news/news-1.png"
+                    alt="Фото новости"
+                    class="news-main__image"
+                  />
                 </div>
                 <div class="news-main__info">
                   <svg class="news-main__favorite">
-                    <use xlink:href="sprite.svg#favorite">
-                    </use>
+                    <use xlink:href="sprite.svg#favorite"></use>
                   </svg>
-                  
+
                   <span class="news-main__theme">Новости</span>
-                  <a href="#" class="news-main__title">Новый налоговый режим для фрилансеров — налог на проф. доход</a>
-                  <p class="news-main__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
+                  <a href="#" class="news-main__title"
+                    >Новый налоговый режим для фрилансеров — налог на проф.
+                    доход</a
+                  >
+                  <p class="news-main__text">
+                    Руководитель налоговой заявил, что этот режим “поможет выйти
+                    из тени” тем, кто работает неофициально. Разобрались, как
+                    работает режим и кому он подходит, а кому нет.
+                  </p>
                   <div class="news-main__stat">
                     <span class="news-main__date">6 августа</span>
-                    <img class="news-main__comment" src="img/news/comment.svg" alt="Иконка: комментарий">
+                    <img
+                      class="news-main__comment"
+                      src="img/news/comment.svg"
+                      alt="Иконка: комментарий"
+                    />
                     <span class="news-main__number">342</span>
-                    <img src="img/news/heart.svg" alt="Иконка: лайк" class="news-main__like">
+                    <img
+                      src="img/news/heart.svg"
+                      alt="Иконка: лайк"
+                      class="news-main__like"
+                    />
                     <span class="news-main__number">830</span>
                   </div>
                 </div>
@@ -391,21 +485,41 @@
             <div class="news-main__item">
               <div class="news-main__border">
                 <div class="news-main__photo">
-                  <img src="img/news/news-2.png" alt="Фото новости" class="news-main__image">
+                  <img
+                    src="img/news/news-2.png"
+                    alt="Фото новости"
+                    class="news-main__image"
+                  />
                 </div>
                 <div class="news-main__info">
                   <svg class="news-main__favorite">
-                    <use xlink:href="sprite.svg#favorite">
-                    </use>
+                    <use xlink:href="sprite.svg#favorite"></use>
                   </svg>
-                  <span class="news-main__theme news-main__theme--turquoise">Мнения</span>
-                  <a href="#" class="news-main__title">Платные курсы — это не быстрый способ выйти на нужный уровень</a>
-                  <p class="news-main__text">Среди новичков распространено мнение, что если пройти какой-то крутой онлайн-курс, то это решит все проблемы. Но они не берут в расчет, что лучшее обучение — это практика. </p>
+                  <span class="news-main__theme news-main__theme--turquoise"
+                    >Мнения</span
+                  >
+                  <a href="#" class="news-main__title"
+                    >Платные курсы — это не быстрый способ выйти на нужный
+                    уровень</a
+                  >
+                  <p class="news-main__text">
+                    Среди новичков распространено мнение, что если пройти
+                    какой-то крутой онлайн-курс, то это решит все проблемы. Но
+                    они не берут в расчет, что лучшее обучение — это практика.
+                  </p>
                   <div class="news-main__stat">
                     <span class="news-main__date">7 октября</span>
-                    <img class="news-main__comment" src="img/news/comment.svg" alt="Иконка: комментарий">
+                    <img
+                      class="news-main__comment"
+                      src="img/news/comment.svg"
+                      alt="Иконка: комментарий"
+                    />
                     <span class="news-main__number">27</span>
-                    <img src="img/news/heart.svg" alt="Иконка: лайк" class="news-main__like">
+                    <img
+                      src="img/news/heart.svg"
+                      alt="Иконка: лайк"
+                      class="news-main__like"
+                    />
                     <span class="news-main__number">129</span>
                   </div>
                 </div>
@@ -414,21 +528,41 @@
             <div class="news-main__item">
               <div class="news-main__border">
                 <div class="news-main__photo">
-                  <img src="img/news/news-3.png" alt="Фото новости" class="news-main__image">
+                  <img
+                    src="img/news/news-3.png"
+                    alt="Фото новости"
+                    class="news-main__image"
+                  />
                 </div>
                 <div class="news-main__info">
                   <svg class="news-main__favorite">
-                    <use xlink:href="sprite.svg#favorite">
-                    </use>
+                    <use xlink:href="sprite.svg#favorite"></use>
                   </svg>
-                  <span class="news-main__theme news-main__theme--red">Горячее</span>
-                  <a href="#" class="news-main__title">Из-за ограничений стали недоступны серверы Telegram. К чему это может... </a>
-                  <p class="news-main__text">Сегодня мы узнали, что серверы Telegram не доступны на территории России. Разобрались, чем это грозит вам, если ваш бизнес зависит от этого мессенджера.  </p>
+                  <span class="news-main__theme news-main__theme--red"
+                    >Горячее</span
+                  >
+                  <a href="#" class="news-main__title"
+                    >Из-за ограничений стали недоступны серверы Telegram. К чему
+                    это может...
+                  </a>
+                  <p class="news-main__text">
+                    Сегодня мы узнали, что серверы Telegram не доступны на
+                    территории России. Разобрались, чем это грозит вам, если ваш
+                    бизнес зависит от этого мессенджера.
+                  </p>
                   <div class="news-main__stat">
                     <span class="news-main__date">12 декабря</span>
-                    <img class="news-main__comment" src="img/news/comment.svg" alt="Иконка: комментарий">
+                    <img
+                      class="news-main__comment"
+                      src="img/news/comment.svg"
+                      alt="Иконка: комментарий"
+                    />
                     <span class="news-main__number">30</span>
-                    <img src="img/news/heart.svg" alt="Иконка: лайк" class="news-main__like">
+                    <img
+                      src="img/news/heart.svg"
+                      alt="Иконка: лайк"
+                      class="news-main__like"
+                    />
                     <span class="news-main__number">284</span>
                   </div>
                 </div>
@@ -437,21 +571,41 @@
             <div class="news-main__item">
               <div class="news-main__border">
                 <div class="news-main__photo">
-                  <img src="img/news/news-4.png" alt="Фото новости" class="news-main__image">
+                  <img
+                    src="img/news/news-4.png"
+                    alt="Фото новости"
+                    class="news-main__image"
+                  />
                 </div>
                 <div class="news-main__info">
                   <svg class="news-main__favorite">
-                    <use xlink:href="sprite.svg#favorite">
-                    </use>
+                    <use xlink:href="sprite.svg#favorite"></use>
                   </svg>
-                  <span class="news-main__theme news-main__theme--turquoise">Мнения</span>
-                  <a href="#" class="news-main__title">В вашем портфолио могут быть фейковые проекты, если вы сделали...</a>
-                  <p class="news-main__text">Один из читателей предположил, что если в портфолио положить несуществующий проект, то ничего страшного не произойдет. Он провел эксперимент и потенциальные заказчики... </p>
+                  <span class="news-main__theme news-main__theme--turquoise"
+                    >Мнения</span
+                  >
+                  <a href="#" class="news-main__title"
+                    >В вашем портфолио могут быть фейковые проекты, если вы
+                    сделали...</a
+                  >
+                  <p class="news-main__text">
+                    Один из читателей предположил, что если в портфолио положить
+                    несуществующий проект, то ничего страшного не произойдет. Он
+                    провел эксперимент и потенциальные заказчики...
+                  </p>
                   <div class="news-main__stat">
                     <span class="news-main__date">20 июля</span>
-                    <img class="news-main__comment" src="img/news/comment.svg" alt="Иконка: комментарий">
+                    <img
+                      class="news-main__comment"
+                      src="img/news/comment.svg"
+                      alt="Иконка: комментарий"
+                    />
                     <span class="news-main__number">102</span>
-                    <img src="img/news/heart.svg" alt="Иконка: лайк" class="news-main__like">
+                    <img
+                      src="img/news/heart.svg"
+                      alt="Иконка: лайк"
+                      class="news-main__like"
+                    />
                     <span class="news-main__number">1,293</span>
                   </div>
                 </div>
@@ -459,128 +613,207 @@
             </div>
             <div class="news-main__item">
               <div class="news-main__border"">
-                <div class="news-main__photo">
-                  <img src="img/news/news-5.png" alt="Фото новости" class="news-main__image">
-                </div>
-                <div class="news-main__info">
-                  <svg class="news-main__favorite">
-                    <use xlink:href="sprite.svg#favorite">
-                    </use>
-                  </svg>
-                  <span class="news-main__theme news-main__theme--red">Горячее</span>
-                  <a href="#" class="news-main__title">Список стран, куда можно улететь</a>
-                  <p class="news-main__text">Если вы приняли решение переехать в другую страну, чтобы найти там работу, сначала посмотрите на список стран, который мы подготовили для вас. Внутри важная информация про...</p>
-                  <div class="news-main__stat">
-                    <span class="news-main__date">22 октября</span>
-                    <img class="news-main__comment" src="img/news/comment.svg" alt="Иконка: комментарий">
-                    <span class="news-main__number">5</span>
-                    <img src="img/news/heart.svg" alt="Иконка: лайк" class="news-main__like">
-                    <span class="news-main__number">82</span>
-                  </div>
+              <div class="news-main__photo">
+                <img
+                  src="img/news/news-5.png"
+                  alt="Фото новости"
+                  class="news-main__image"
+                />
+              </div>
+              <div class="news-main__info">
+                <svg class="news-main__favorite">
+                  <use xlink:href="sprite.svg#favorite"></use>
+                </svg>
+                <span class="news-main__theme news-main__theme--red"
+                  >Горячее</span
+                >
+                <a href="#" class="news-main__title"
+                  >Список стран, куда можно улететь</a
+                >
+                <p class="news-main__text">
+                  Если вы приняли решение переехать в другую страну, чтобы найти
+                  там работу, сначала посмотрите на список стран, который мы
+                  подготовили для вас. Внутри важная информация про...
+                </p>
+                <div class="news-main__stat">
+                  <span class="news-main__date">22 октября</span>
+                  <img
+                    class="news-main__comment"
+                    src="img/news/comment.svg"
+                    alt="Иконка: комментарий"
+                  />
+                  <span class="news-main__number">5</span>
+                  <img
+                    src="img/news/heart.svg"
+                    alt="Иконка: лайк"
+                    class="news-main__like"
+                  />
+                  <span class="news-main__number">82</span>
                 </div>
               </div>
             </div>
-            <div class="news-main__item news-main__item--last">
-              <div class="news-main__border news-main__border--last ">
-                <div class="news-main__photo">
-                  <img src="img/news/news-6.png" alt="Фото новости" class="news-main__image">
-                </div>
-                <div class="news-main__info">
-                  <svg class="news-main__favorite">
-                    <use xlink:href="sprite.svg#favorite">
-                    </use>
-                  </svg>
-                  <span class="news-main__theme news-main__theme--purple">Подборки</span>
-                  <a href="#" class="news-main__title">Список Youtube каналов для тех, кто только начинает изучать разработку</a>
-                  <p class="news-main__text">Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы, посвященные айти. Тут можно найти видеоуроки, лекции и бесплатные курсы. </p>
-                  <div class="news-main__stat">
-                    <span class="news-main__date">26 октября</span>
-                    <img class="news-main__comment" src="img/news/comment.svg" alt="Иконка: комментарий">
-                    <span class="news-main__number">101</span>
-                    <img src="img/news/heart.svg" alt="Иконка: лайк" class="news-main__like">
-                    <span class="news-main__number">432</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
-          <div class="news-recent">
-            <h2 class="news-recent__title">Недавно опубликовано</h2>
-            <div class="news-recent__items">
-              <div class="news-recent__item news-recent__item--1">
-                <a href="#" class="news-recent__link">
-                  <img src="img/news/recent-1.png" alt="Фото публикации" class="news-recent__image">
-                  <div class="news-recent__info">
-                    <span class="news-recent__subtitle">Работа на удаленке, как это теперь</span>
-                    <span class="news-recent__time">15 минут назад</span>
-                    <span class="news-recent__number">1</span>
-                  </div>
-                </a>
+          <div class="news-main__item news-main__item--last">
+            <div class="news-main__border news-main__border--last">
+              <div class="news-main__photo">
+                <img
+                  src="img/news/news-6.png"
+                  alt="Фото новости"
+                  class="news-main__image"
+                />
               </div>
-              <div class="news-recent__item">
-                <a href="#" class="news-recent__link">
-                  <img src="img/news/recent-2.png" alt="Фото публикации" class="news-recent__image">
-                  <div class="news-recent__info">
-                    <span class="news-recent__subtitle">Для чего нужен Node.js и с чем...</span>
-                    <span class="news-recent__time">32 минуты назад</span>
-                    <span class="news-recent__number">2</span>
-                  </div>
-                </a>
-              </div>
-              <div class="news-recent__item news-recent__item--3">
-                <a href="#" class="news-recent__link">
-                  <img src="img/news/recent-3.png" alt="Фото публикации" class="news-recent__image">
-                  <div class="news-recent__info">
-                    <span class="news-recent__subtitle">Работа в Google: собеседования и...</span>
-                    <span class="news-recent__time">38 минут назад</span>
-                    <span class="news-recent__number">3</span>
-                  </div>
-                </a>
-              </div>
-              <div class="news-recent__item">
-                <a href="#" class="news-recent__link">
-                  <img src="img/news/recent-4.png" alt="Фото публикации" class="news-recent__image">
-                  <div class="news-recent__info">
-                    <span class="news-recent__subtitle">Переезд в Нью Йорк для работы по...</span>
-                    <span class="news-recent__time">53 минуты назад</span>
-                    <span class="news-recent__number">4</span>
-                  </div>
-                </a>
-              </div>
-              <div class="news-recent__item news-recent__item--5">
-                <a href="#" class="news-recent__link">
-                  <img src="img/news/recent-5.png" alt="Фото публикации" class="news-recent__image">
-                  <div class="news-recent__info">
-                    <span class="news-recent__subtitle">Почему родители против того, чтобы...</span>
-                    <span class="news-recent__time">1 час назад</span>
-                    <span class="news-recent__number">5</span>
-                  </div>
-                </a>
-              </div>
-              <div class="news-recent__item">
-                <a href="#" class="news-recent__link">
-                  <img src="img/news/recent-6.png" alt="Фото публикации" class="news-recent__image">
-                  <div class="news-recent__info">
-                    <span class="news-recent__subtitle">Прокрастинация: побороть отклады...</span>
-                    <span class="news-recent__time">1 час назад</span>
-                    <span class="news-recent__number">6</span>
-                  </div>
-                </a>
+              <div class="news-main__info">
+                <svg class="news-main__favorite">
+                  <use xlink:href="sprite.svg#favorite"></use>
+                </svg>
+                <span class="news-main__theme news-main__theme--purple"
+                  >Подборки</span
+                >
+                <a href="#" class="news-main__title"
+                  >Список Youtube каналов для тех, кто только начинает изучать
+                  разработку</a
+                >
+                <p class="news-main__text">
+                  Мы собрали на одной странице кучу ссылок на полезные
+                  русскоязычные каналы, посвященные айти. Тут можно найти
+                  видеоуроки, лекции и бесплатные курсы.
+                </p>
+                <div class="news-main__stat">
+                  <span class="news-main__date">26 октября</span>
+                  <img
+                    class="news-main__comment"
+                    src="img/news/comment.svg"
+                    alt="Иконка: комментарий"
+                  />
+                  <span class="news-main__number">101</span>
+                  <img
+                    src="img/news/heart.svg"
+                    alt="Иконка: лайк"
+                    class="news-main__like"
+                  />
+                  <span class="news-main__number">432</span>
+                </div>
               </div>
             </div>
-            <div class="news-recent__item news-recent__item--7">
-              <a href="#" class="news-recent__link news-recent__link--7">
-                <img src="img/news/recent-7.png" alt="Фото публикации" class="news-recent__image">
+          </div>
+        </div>
+        <div class="news-recent">
+          <h2 class="news-recent__title">Недавно опубликовано</h2>
+          <div class="news-recent__items">
+            <div class="news-recent__item news-recent__item--1">
+              <a href="#" class="news-recent__link">
+                <img
+                  src="img/news/recent-1.png"
+                  alt="Фото публикации"
+                  class="news-recent__image"
+                />
                 <div class="news-recent__info">
-                  <span class="news-recent__subtitle">Правки от заказчика могут быть...</span>
-                  <span class="news-recent__time">2 часа назад</span>
-                  <span class="news-recent__number">7</span>
+                  <span class="news-recent__subtitle"
+                    >Работа на удаленке, как это теперь</span
+                  >
+                  <span class="news-recent__time">15 минут назад</span>
+                  <span class="news-recent__number">1</span>
                 </div>
               </a>
             </div>
-            <a href="#" class="news-recent__more">Read more</a>
+            <div class="news-recent__item">
+              <a href="#" class="news-recent__link">
+                <img
+                  src="img/news/recent-2.png"
+                  alt="Фото публикации"
+                  class="news-recent__image"
+                />
+                <div class="news-recent__info">
+                  <span class="news-recent__subtitle"
+                    >Для чего нужен Node.js и с чем...</span
+                  >
+                  <span class="news-recent__time">32 минуты назад</span>
+                  <span class="news-recent__number">2</span>
+                </div>
+              </a>
+            </div>
+            <div class="news-recent__item news-recent__item--3">
+              <a href="#" class="news-recent__link">
+                <img
+                  src="img/news/recent-3.png"
+                  alt="Фото публикации"
+                  class="news-recent__image"
+                />
+                <div class="news-recent__info">
+                  <span class="news-recent__subtitle"
+                    >Работа в Google: собеседования и...</span
+                  >
+                  <span class="news-recent__time">38 минут назад</span>
+                  <span class="news-recent__number">3</span>
+                </div>
+              </a>
+            </div>
+            <div class="news-recent__item">
+              <a href="#" class="news-recent__link">
+                <img
+                  src="img/news/recent-4.png"
+                  alt="Фото публикации"
+                  class="news-recent__image"
+                />
+                <div class="news-recent__info">
+                  <span class="news-recent__subtitle"
+                    >Переезд в Нью Йорк для работы по...</span
+                  >
+                  <span class="news-recent__time">53 минуты назад</span>
+                  <span class="news-recent__number">4</span>
+                </div>
+              </a>
+            </div>
+            <div class="news-recent__item news-recent__item--5">
+              <a href="#" class="news-recent__link">
+                <img
+                  src="img/news/recent-5.png"
+                  alt="Фото публикации"
+                  class="news-recent__image"
+                />
+                <div class="news-recent__info">
+                  <span class="news-recent__subtitle"
+                    >Почему родители против того, чтобы...</span
+                  >
+                  <span class="news-recent__time">1 час назад</span>
+                  <span class="news-recent__number">5</span>
+                </div>
+              </a>
+            </div>
+            <div class="news-recent__item">
+              <a href="#" class="news-recent__link">
+                <img
+                  src="img/news/recent-6.png"
+                  alt="Фото публикации"
+                  class="news-recent__image"
+                />
+                <div class="news-recent__info">
+                  <span class="news-recent__subtitle"
+                    >Прокрастинация: побороть отклады...</span
+                  >
+                  <span class="news-recent__time">1 час назад</span>
+                  <span class="news-recent__number">6</span>
+                </div>
+              </a>
+            </div>
           </div>
+          <div class="news-recent__item news-recent__item--7">
+            <a href="#" class="news-recent__link news-recent__link--7">
+              <img
+                src="img/news/recent-7.png"
+                alt="Фото публикации"
+                class="news-recent__image"
+              />
+              <div class="news-recent__info">
+                <span class="news-recent__subtitle"
+                  >Правки от заказчика могут быть...</span
+                >
+                <span class="news-recent__time">2 часа назад</span>
+                <span class="news-recent__number">7</span>
+              </div>
+            </a>
+          </div>
+          <a href="#" class="news-recent__more">Read more</a>
         </div>
       </div>
     </section>
@@ -588,217 +821,296 @@
     <section class="offers">
       <div class="container">
         <div class="offers-wrapper">
-          <div class="offers-slider offers__item">
-            <div class="offers-user">
-              <img src="img/offers/avatar.png" alt="Фото: аватар" class="offers-user__image">
-              <span class="offers-user__name">Оксана Пушкина</span>
-              <span class="offers-user__prof">Фотограф</span>
+          <div class="swiper-container">
+            <div class="offers-slider offers__item">
+              <div class="offers-user">
+                <img
+                  src="img/offers/avatar.png"
+                  alt="Фото: аватар"
+                  class="offers-user__image"
+                />
+                <span class="offers-user__name">Оксана Пушкина</span>
+                <span class="offers-user__prof">Фотограф</span>
+                <h1 class="offers-slider__title">
+                  Выбор читателей: где удобнее работать фрилансеру
+                </h1>
+                <button class="offers-slider__button">
+                  <img
+                    src="img/offers/images.svg"
+                    alt="Иконка: фото"
+                    class="offers-slider__button-icon"
+                  />
+                  <span class="offers-slider__button-text">Смотреть фото</span>
+                  <span class="offers-slider__button-number">26</span>
+                </button>
+              </div>
             </div>
-            <h1 class="offers-slider__title">Выбор читателей: где удобнее работать фрилансеру</h1>
-            <button class="offers-slider__button">
-              <img src="img/offers/images.svg" alt="Иконка: фото" class="offers-slider__button-icon">
-              <span class="offers-slider__button-text">Смотреть фото</span>
-              <span class="offers-slider__button-number">26</span>
-            </button>
-        
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/offers/slider-1.jpeg" alt="Слайд 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/offers/slide-2.jpeg" alt="Слайд 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/offers/slide-3.jpeg" alt="Слайд 3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/offers/slide-4.jpeg" alt="Слайд 4" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/offers/slide-5.jpeg" alt="Слайд 5" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
           </div>
-
 
           <div class="offers-career offers__item">
             <div class="offers-career__info">
               <div class="offers-career__theme">Карьера</div>
-              <h2 class="offers-career__title">Вопросы на собеседовании для джуна</h2>
+              <h2 class="offers-career__title">
+                Вопросы на собеседовании для джуна
+              </h2>
               <span class="offers-career__text">
-                Каверзные и не очень вопросы, которых боятся новички, когда идут на собеседование
+                Каверзные и не очень вопросы, которых боятся новички, когда идут
+                на собеседование
               </span>
               <a href="#" class="offers-career__button">
                 <span>Читать далее</span>
-                <img src="img/insert/arrow.svg" alt="Стрелка вправо" class="offers__arrow">
+                <img
+                  src="img/insert/arrow.svg"
+                  alt="Стрелка вправо"
+                  class="offers__arrow"
+                />
               </a>
             </div>
-            
           </div>
-          
-          <a href="#"  class="offers-workout offers__item">
+
+          <a href="#" class="offers-workout offers__item">
             <h3 class="offers-workout__title">Зарядка для глаз</h3>
-            <span class="offers-workout__text">Эти несколько упражнений помогут сохранить зрение. Можно делать их даже если...</span>
+            <span class="offers-workout__text"
+              >Эти несколько упражнений помогут сохранить зрение. Можно делать
+              их даже если...</span
+            >
             <span class="offers-workout__date">15 октября</span>
           </a>
-          
+
           <a href="#" class="offers-plagins offers__item">
             <h3 class="offers-plagins__title">Топ плагинов jQuery</h3>
-            <span class="offers-plagins__text">Какие плагины помогут быстро создать галерею, выпадающие списки или окна</span>
+            <span class="offers-plagins__text"
+              >Какие плагины помогут быстро создать галерею, выпадающие списки
+              или окна</span
+            >
             <span class="offers-plagins__date">14 октября</span>
           </a>
         </div>
-
       </div>
     </section>
     <footer class="footer">
       <div class="container">
-          <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
-          <form action="send.php" method="POST" class="form footer__form">
-              <div class="footer__input-group">
-                  <input type="email" class="footer__input" required placeholder="Email" name="email">
-              </div>
-              <button class="button footer__button">Подписаться</button>
-          </form>
-          <div class="footer-links">
-              <div class="footer-links__news footer-links__block">
-                  <h3 class="footer-links__title">Новости</h3>
-                  <ul class="footer-links__list">
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Обновления</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Экспресс</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Politics</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Solar Eclipse</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="footer-links__articles footer-links__block">
-                  <h3 class="footer-links__title">Статьи</h3>
-                  <ul class="footer-links__list">
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">HTML</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">CSS</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">JavaScript</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Web Design</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="footer-links__video footer-links__block">
-                  <h3 class="footer-links__title">Видеоуроки</h3>
-                  <ul class="footer-links__list">
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Скринкасты</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Уроки</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Вебинары</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="footer-links__courses footer-links__block">
-                  <h3 class="footer-links__title">Курсы</h3>
-                  <ul class="footer-links__list">
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Платные интенсивы</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Бесплатные стримы</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Мастер-классы</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Менторство</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Буткемпы</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="footer-links__information footer-links__block">
-                  <h3 class="footer-links__title">Информация</h3>
-                  <ul class="footer-links__list">
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Политика данных</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Оферта сайта</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Реквизиты</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Контакты</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="footer-links__categories footer-links__block footer-links__block--categories">
-                  <h3 class="footer-links__title">Категории</h3>
-                  <ul class="footer-links__list">
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Популярное</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Горячее</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Подборки</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Мнения</a>
-                      </li>
-                      <li class="footer-links__item">
-                          <a href="#" class="footer-links__link">Карьера</a>
-                      </li>
-                  </ul>
-              </div>
+        <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
+        <form class="form footer__form">
+          <div class="footer__input-group">
+            <div class="parent">
+              <input
+                type="email"
+                class="footer__input"
+                placeholder="Email"
+                name="email"
+              />
+            </div>
           </div>
-          <div class="footer-social">
-              <a href="#" class="footer-social__image">
-                  <img src="img/footer/logo.svg" alt="логотип" class="footer-social__logo">
-              </a>
-              <div class="footer-social__about">
-                  <div class="footer-social__block">
-                      <a href="#" class="footer-social__item">Контакты</a>
-                      <a href="#" class="footer-social__item">Работа у нас</a>
-                  </div>
-                  <div class="footer-social__block">
-                      <a href="#" class="footer-social__item">Реклама</a>
-                      <a href="#" class="footer-social__item footer-social__item--partner">Партнерство</a>
-                  </div>
-              </div>
-              <div class="footer-social__links">
-                  <a href="https://facebook.com" target="_blank" class="footer-social__icon footer-social__icon--facebook">
-                    <svg class="icon-facebook icon-facebook--footer ">
-                      <use xlink:href="sprite.svg#facebook">
-                      </use>
-                    </svg>
-                  </a>
-                  <a href="https://twitter.com" target="_blank" class="footer-social__icon footer-social__icon--twitter">
-                    <svg class="icon-twitter icon-twitter--footer">
-                      <use xlink:href="sprite.svg#twitter">
-                      </use>
-                    </svg>
-                  </a>
-                  <a href="https://youtube.com" target="_blank" class="footer-social__icon footer-social__icon--youtube">
-                    <svg class="icon-youtube icon-youtube--footer">
-                      <use xlink:href="sprite.svg#youtube">
-                      </use>
-                    </svg>
-                  </a>
-                  <a href="https://www.instagram.com/" target="_blank" class="footer-social__icon footer-social__icon--instagram">
-                    <svg class="icon-instagram">
-                      <use xlink:href="sprite.svg#instagram">
-                      </use>
-                    </svg>
-                  </a>
-              </div>
+          <button type="submit" class="button footer__button">
+            Подписаться
+          </button>
+        </form>
+        <div class="footer-links">
+          <div class="footer-links__news footer-links__block">
+            <h3 class="footer-links__title">Новости</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Обновления</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Экспресс</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Politics</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Solar Eclipse</a>
+              </li>
+            </ul>
           </div>
-          <div class="footer-bottom">
-              <span class="footer-bottom__text">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</span> 
-              <span class="footer-bottom__year">© 2020 Universal Magazine</span> 
+          <div class="footer-links__articles footer-links__block">
+            <h3 class="footer-links__title">Статьи</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">HTML</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">CSS</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">JavaScript</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Web Design</a>
+              </li>
+            </ul>
           </div>
+          <div class="footer-links__video footer-links__block">
+            <h3 class="footer-links__title">Видеоуроки</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Скринкасты</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Уроки</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Вебинары</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links__courses footer-links__block">
+            <h3 class="footer-links__title">Курсы</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Платные интенсивы</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Бесплатные стримы</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Мастер-классы</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Менторство</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Буткемпы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links__information footer-links__block">
+            <h3 class="footer-links__title">Информация</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Политика данных</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Оферта сайта</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Реквизиты</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="
+              footer-links__categories
+              footer-links__block
+              footer-links__block--categories
+            "
+          >
+            <h3 class="footer-links__title">Категории</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Популярное</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Горячее</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Подборки</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Мнения</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Карьера</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="footer-social__image">
+            <img
+              src="img/footer/logo.svg"
+              alt="логотип"
+              class="footer-social__logo"
+            />
+          </a>
+          <div class="footer-social__about">
+            <div class="footer-social__block">
+              <a href="#" class="footer-social__item">Контакты</a>
+              <a href="#" class="footer-social__item">Работа у нас</a>
+            </div>
+            <div class="footer-social__block">
+              <a href="#" class="footer-social__item">Реклама</a>
+              <a
+                href="#"
+                class="footer-social__item footer-social__item--partner"
+                >Обратная связь</a
+              >
+            </div>
+          </div>
+          <div class="footer-social__links">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="footer-social__icon footer-social__icon--facebook"
+            >
+              <svg class="icon-facebook icon-facebook--footer">
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="footer-social__icon footer-social__icon--twitter"
+            >
+              <svg class="icon-twitter icon-twitter--footer">
+                <use xlink:href="sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              class="footer-social__icon footer-social__icon--youtube"
+            >
+              <svg class="icon-youtube icon-youtube--footer">
+                <use xlink:href="sprite.svg#youtube"></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer-social__icon footer-social__icon--instagram"
+            >
+              <svg class="icon-instagram">
+                <use xlink:href="sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-bottom__text"
+            >Universal — это онлайн издание, в котором мы публикуем полезные
+            материалы о веб разработке: статьи, новости, видеоуроки, подборки,
+            ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+            указывайте ссылку.</span
+          >
+          <span class="footer-bottom__year">© 2020 Universal Magazine</span>
+        </div>
       </div>
-  </footer>
-    
-
+    </footer>
 
     <div class="mobile-menu">
       <a href="#" class="modal__close-mobile">
@@ -815,9 +1127,7 @@
           <a class="navbar-menu__link-mobile" href="#">Новости</a>
         </li>
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile " href="#"
-            >Горячее</a
-          >
+          <a class="navbar-menu__link-mobile" href="#">Горячее</a>
         </li>
         <li class="navbar-menu__item-mobile">
           <a class="navbar-menu__link-mobile" href="#">HTML</a>
@@ -841,9 +1151,16 @@
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="icon: close" />
         </a>
-        <img class="success-form__photo" src="img/checked.svg" alt="иконка: успех">
+        <img
+          class="success-form__photo"
+          src="img/checked.svg"
+          alt="иконка: успех"
+        />
         <h1 class="success-form__title">Сообщение отправлено</h1>
-        <span class="success-form__text">Спасибо за обращение! Наш менеджер свяжется с Вами через 5 минут.</span>
+        <span class="success-form__text"
+          >Спасибо за обращение! Наш менеджер свяжется с Вами через 5
+          минут.</span
+        >
       </div>
     </div>
     <div class="modal">
@@ -853,14 +1170,13 @@
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title">Оставить заявку</h3>
-        <form class="modal__form form">
+        <form class="modal__form form" novalidate>
           <div class="parent">
             <input
               type="text"
               class="input modal__input"
               placeholder="Ваше имя*"
               name="name"
-              
               minlength="2"
             />
           </div>
@@ -870,7 +1186,6 @@
               class="input modal__input request-form-phone"
               placeholder="Номер телефона*"
               name="phone"
-              
             />
           </div>
           <div class="parent">
@@ -879,7 +1194,6 @@
               class="input modal__input"
               placeholder="Email*"
               name="email"
-              
             />
           </div>
           <textarea
@@ -904,6 +1218,6 @@
     <script src="js/form.js"></script>
     <script src="js/favorites.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src='js/slider.js'></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

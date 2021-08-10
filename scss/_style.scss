@@ -1,0 +1,44 @@
+// Подключение normalize
+@import 'normalize';
+
+// Подключение базовых настроек
+@import 'settings';
+
+// Подключение переменных
+@import 'variables';
+
+// // Подключение стилей для блока header
+// @import 'blocks-index/header';
+
+// // Подключение стилей для блока hero
+// @import 'blocks-index/hero';
+
+// // Подключение стилей для блока suggestion
+// @import 'blocks-index/suggestion';
+
+// // Подключение стилей для блока articles
+// @import 'blocks-index/articles';
+
+// // Подключение стилей для блока insert
+// @import 'blocks-index/insert';
+
+// // Подключение стилей для блока news
+// @import 'blocks-index/news';
+
+// // Подключение стилей для блока offers
+// @import 'blocks-index/offers';
+
+// Подключение стилей для блока footer
+@import 'shared/footer';
+
+// Подключение стилей мобильного меню
+@import 'shared/mobile';
+
+// Подключение стилей окна успеха
+@import 'shared/success';
+
+// Подключение стилей модального окна
+@import 'shared/modal';
+
+// Подключение стилей для адаптива
+@import 'media-shared';
