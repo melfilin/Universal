@@ -26,7 +26,11 @@
       <div class="container">
         <div class="navbar-wrapper navbar-wrapper__mobile-hidden">
           <a href="index.html" class="logo">
-            <img class="navbar__logo" src="img/Logo/logo-white.svg" alt="" />
+            <img
+              class="navbar__logo"
+              src="img/logo/logo-blue.svg"
+              alt="логотип"
+            />
           </a>
           <ul class="navbar-menu">
             <li class="navbar-menu__item">
@@ -37,7 +41,7 @@
             </li>
             <li class="navbar-menu__item">
               <a class="navbar-menu__link navbar-menu__link--hot" href="#"
-                >Горячее</a
+                >Курсы</a
               >
             </li>
             <li class="navbar-menu__item">
@@ -94,6 +98,285 @@
       </ul>
       <a href="#" class="navbar-button__mobile">Оставить заявку</a>
     </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-block">
+          <div class="hero-block__nav">
+            <div class="hero-block__theme">Новости</div>
+            <div class="hero-block__buttons">
+              <a href="#" class="hero-block__link">
+                <img
+                  src="img/article-hero/home.svg"
+                  alt="Иконка дома"
+                  class="hero-block__icon"
+                />
+                <span class="hero-block__btn hero-block__btn--1"
+                  >На главную</span
+                >
+              </a>
+              <a href="#" class="hero-block__link">
+                <img
+                  src="img/article-hero/arrow-left.svg"
+                  alt="Стрелка влево"
+                  class="hero-block__icon"
+                />
+                <span class="hero-block__btn hero-block__btn--2">Назад</span>
+              </a>
+              <a href="#" class="hero-block__link">
+                <span class="hero-block__btn hero-block__btn--3">Вперед</span>
+                <img
+                  src="img/article-hero/arrow-right.svg"
+                  alt="Стрелка вправо"
+                  class="hero-block__icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hero-block__info">
+            <svg class="icon-favorite hero-block__favorite">
+              <use xlink:href="sprite.svg#favorite"></use>
+            </svg>
+            <div class="hero-block__content">
+              <h1 class="hero-block__title">
+                Новый налоговый режим для фрилансеров — налог на проф. доход
+              </h1>
+              <p class="hero-block__text">
+                Руководитель налоговой заявил, что этот режим “поможет выйти из
+                тени” тем, кто работает неофициально. Разобрались, как работает
+                режим и кому он подходит, а кому нет.
+              </p>
+              <div class="hero-block__stat">
+                <img
+                  src="img/article-hero/clock.svg"
+                  alt="Иконка часов"
+                  class="hero-block__clock"
+                />
+                <span class="hero-block__date">6 августа, 10:30</span>
+                <img
+                  src="img/articles/heart.svg"
+                  alt="Иконка: лайк"
+                  class="hero-block__like"
+                />
+                <span class="hero-block__number hero-block__number--830"
+                  >830</span
+                >
+                <img
+                  src="img/articles/comment.svg"
+                  alt="Иконка: комментарий"
+                  class="hero-block__comment"
+                />
+                <span class="hero-block__number">19</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
+        <form class="form footer__form">
+          <div class="footer__input-group">
+            <div class="parent">
+              <input
+                type="email"
+                class="footer__input"
+                placeholder="Email"
+                name="email"
+              />
+            </div>
+          </div>
+          <button type="submit" class="button footer__button">
+            Подписаться
+          </button>
+        </form>
+        <div class="footer-links">
+          <div class="footer-links__news footer-links__block">
+            <h3 class="footer-links__title">Новости</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Обновления</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Экспресс</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Politics</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Solar Eclipse</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links__articles footer-links__block">
+            <h3 class="footer-links__title">Статьи</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">HTML</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">CSS</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">JavaScript</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Web Design</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links__video footer-links__block">
+            <h3 class="footer-links__title">Видеоуроки</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Скринкасты</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Уроки</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Вебинары</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links__courses footer-links__block">
+            <h3 class="footer-links__title">Курсы</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Платные интенсивы</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Бесплатные стримы</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Мастер-классы</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Менторство</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Буткемпы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-links__information footer-links__block">
+            <h3 class="footer-links__title">Информация</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Политика данных</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Оферта сайта</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Реквизиты</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="
+              footer-links__categories
+              footer-links__block
+              footer-links__block--categories
+            "
+          >
+            <h3 class="footer-links__title">Категории</h3>
+            <ul class="footer-links__list">
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Популярное</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Горячее</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Подборки</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Мнения</a>
+              </li>
+              <li class="footer-links__item">
+                <a href="#" class="footer-links__link">Карьера</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="footer-social__image">
+            <img
+              src="img/footer/logo.svg"
+              alt="логотип"
+              class="footer-social__logo"
+            />
+          </a>
+          <div class="footer-social__about">
+            <div class="footer-social__block">
+              <a href="#" class="footer-social__item">Контакты</a>
+              <a href="#" class="footer-social__item">Работа у нас</a>
+            </div>
+            <div class="footer-social__block">
+              <a href="#" class="footer-social__item">Реклама</a>
+              <a
+                href="#"
+                class="footer-social__item footer-social__item--partner"
+                >Обратная связь</a
+              >
+            </div>
+          </div>
+          <div class="footer-social__links">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="footer-social__icon footer-social__icon--facebook"
+            >
+              <svg class="icon-facebook icon-facebook--footer">
+                <use xlink:href="sprite.svg#facebook"></use>
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="footer-social__icon footer-social__icon--twitter"
+            >
+              <svg class="icon-twitter icon-twitter--footer">
+                <use xlink:href="sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              class="footer-social__icon footer-social__icon--youtube"
+            >
+              <svg class="icon-youtube icon-youtube--footer">
+                <use xlink:href="sprite.svg#youtube"></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer-social__icon footer-social__icon--instagram"
+            >
+              <svg class="icon-instagram">
+                <use xlink:href="sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-bottom__text"
+            >Universal — это онлайн издание, в котором мы публикуем полезные
+            материалы о веб разработке: статьи, новости, видеоуроки, подборки,
+            ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+            указывайте ссылку.</span
+          >
+          <span class="footer-bottom__year">© 2020 Universal Magazine</span>
+        </div>
+      </div>
+    </footer>
 
     <div class="success-form">
       <div class="modal__overlay"></div>

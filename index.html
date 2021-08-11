@@ -29,13 +29,13 @@
           </a>
           <ul class="navbar-menu">
             <li class="navbar-menu__item">
-              <a class="navbar-menu__link" href="#">Статьи</a>
+              <a class="navbar-menu__link" data-id="#articles">Статьи</a>
             </li>
             <li class="navbar-menu__item">
-              <a class="navbar-menu__link" href="#">Новости</a>
+              <a class="navbar-menu__link" data-id="#news">Новости</a>
             </li>
             <li class="navbar-menu__item">
-              <a class="navbar-menu__link navbar-menu__link--hot" href="#"
+              <a class="navbar-menu__link navbar-menu__link--hot" data-id="#hot"
                 >Горячее</a
               >
             </li>
@@ -82,7 +82,7 @@
             <div class="hero-text">
               <h2 class="subtitle hero-subtitle">Javascript</h2>
               <h1 class="hero-title">Расширение Chrome защищает от атак</h1>
-              <a class="hero-image__button" href="article.html" target="_blank">
+              <a class="hero-image__button" href="article.html">
                 Читать далее
                 <img
                   class="hero-image__button-img"
@@ -192,7 +192,7 @@
         </div>
       </div>
     </section>
-    <section class="articles">
+    <section class="articles" id="articles">
       <div class="container">
         <div class="articles-wrapper">
           <a href="#" class="articles__item articles__item-work">
@@ -424,7 +424,7 @@
           <h2 class="insert__title">
             Расследование недели: сколько зарабатывает веб разработчик в Москве
           </h2>
-          <a href="#" class="insert__button">
+          <a href="article.html" class="insert__button">
             <span>Читать статью</span>
             <img
               src="img/insert/arrow.svg"
@@ -436,7 +436,7 @@
       </div>
     </section>
 
-    <section class="news">
+    <section class="news" id="news">
       <div class="container">
         <div class="news-wrapper">
           <div class="news-main">
@@ -627,7 +627,7 @@
                 <span class="news-main__theme news-main__theme--red"
                   >Горячее</span
                 >
-                <a href="#" class="news-main__title"
+                <a href="#" class="news-main__title news-main__title--red"
                   >Список стран, куда можно улететь</a
                 >
                 <p class="news-main__text">
@@ -818,11 +818,12 @@
       </div>
     </section>
 
-    <section class="offers">
+    <section class="offers" id="hot">
       <div class="container">
         <div class="offers-wrapper">
           <div class="swiper-container">
             <div class="offers-slider offers__item">
+              <span class="offers-offer">Горячее</span>
               <div class="offers-user">
                 <img
                   src="img/offers/avatar.png"
@@ -831,19 +832,19 @@
                 />
                 <span class="offers-user__name">Оксана Пушкина</span>
                 <span class="offers-user__prof">Фотограф</span>
-                <h1 class="offers-slider__title">
-                  Выбор читателей: где удобнее работать фрилансеру
-                </h1>
-                <button class="offers-slider__button">
-                  <img
-                    src="img/offers/images.svg"
-                    alt="Иконка: фото"
-                    class="offers-slider__button-icon"
-                  />
-                  <span class="offers-slider__button-text">Смотреть фото</span>
-                  <span class="offers-slider__button-number">26</span>
-                </button>
               </div>
+              <h1 class="offers-slider__title">
+                Выбор читателей: где удобнее работать фрилансеру
+              </h1>
+              <a href="article.html" class="offers-slider__button">
+                <img
+                  src="img/offers/images.svg"
+                  alt="Иконка: фото"
+                  class="offers-slider__button-icon"
+                />
+                <span class="offers-slider__button-text">Смотреть фото</span>
+                <span class="offers-slider__button-number">26</span>
+              </a>
             </div>
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -877,7 +878,7 @@
                 Каверзные и не очень вопросы, которых боятся новички, когда идут
                 на собеседование
               </span>
-              <a href="#" class="offers-career__button">
+              <a href="article.html" class="offers-career__button">
                 <span>Читать далее</span>
                 <img
                   src="img/insert/arrow.svg"
@@ -1052,11 +1053,9 @@
               <a href="#" class="footer-social__item">Контакты</a>
               <a href="#" class="footer-social__item">Работа у нас</a>
             </div>
-            <div class="footer-social__block">
+            <div class="footer-social__block footer-social__block--last">
               <a href="#" class="footer-social__item">Реклама</a>
-              <a
-                href="#"
-                class="footer-social__item footer-social__item--partner"
+              <a class="footer-social__item footer-social__item--partner"
                 >Обратная связь</a
               >
             </div>
@@ -1121,13 +1120,13 @@
       </a>
       <ul class="navbar-menu__mobile">
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile" href="#">Статьи</a>
+          <a class="navbar-menu__link-mobile" data-id="#articles">Статьи</a>
         </li>
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile" href="#">Новости</a>
+          <a class="navbar-menu__link-mobile" data-id="#news">Новости</a>
         </li>
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile" href="#">Горячее</a>
+          <a class="navbar-menu__link-mobile" data-id="#hot">Горячее</a>
         </li>
         <li class="navbar-menu__item-mobile">
           <a class="navbar-menu__link-mobile" href="#">HTML</a>
@@ -1202,7 +1201,7 @@
             name="message"
           ></textarea>
           <div class="modal-wrapper__button">
-            <button class="button modal__button" type="submit">
+            <button type="submit" class="button modal__button">
               Отправить
             </button>
             <span class="modal__info">* Обязательные поля</span>
@@ -1210,7 +1209,15 @@
         </form>
       </div>
     </div>
+
+    <svg class="arrow-up">
+      <use xlink:href="sprite.svg#arrow-up"></use>
+    </svg>
+
     <script src="js/navbar.js"></script>
+    <script src="js/buttonup.js"></script>
+    <script src="js/scrollto.js"></script>
+    <script src="js/scrolltomobile.js"></script>
     <script src="js/index.js"></script>
     <script src="js/phoneValidator.js"></script>
     <script src="js/modal.js"></script>

@@ -1,6 +1,5 @@
 .navbar {
-  background-color: $background;
-  margin-bottom: 28px;
+  background-color: #fff;
   position: relative;
   &-wrapper {
     padding-top: 15px;
@@ -18,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     &__link {
-      color: $font-white;
+      color: #939699;
       font-weight: 700;
       font-size: 14px;
       text-decoration: none;

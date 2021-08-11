@@ -38,6 +38,7 @@
       padding-top: 5px;
       padding-bottom: 5px;
       display: flex;
+      justify-content: space-between;
     }
     &__favorite {
       fill: #bcbfc2;
@@ -68,6 +69,7 @@
         color: #3bbdc4;
       }
       &--red {
+        margin-bottom: 0;
         color: #ff4f52;
       }
       &--purple {

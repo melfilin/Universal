@@ -13,6 +13,7 @@
     transition: 0.3s;
     &--visible {
       right: 0;
+      z-index: 100;
     }
   }
 }

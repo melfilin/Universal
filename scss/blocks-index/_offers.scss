@@ -2,6 +2,16 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background: #262d33;
+  &-offer {
+    position: absolute;
+    padding: 5px 12px;
+    font-size: 12px;
+    color: $font-white;
+    background: #3dc47e;
+    border-radius: 3px;
+    top: 18px;
+    left: 18px;
+  }
   &-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

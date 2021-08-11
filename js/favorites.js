@@ -1,31 +1,39 @@
-const favorites = document.querySelectorAll('.news-main__favorite');
+(() => {
+  const favorites = document.querySelectorAll('.news-main__favorite');
+  let favoritesStore = JSON.parse(localStorage.getItem('favorites')) || [];
 
-const favoritesStore = JSON.parse(localStorage.getItem('favorites')) || [];
-
-favorites.forEach((favorite, index) => {
-  favorite.setAttribute('data-id', index);
-  favorite.addEventListener('click', () => {
-    if (favorite.classList[1] === 'active') {
-      removeFromStoreById(index);
-      favorite.classList.remove('active');
-    } else {
-      favorite.classList.add('active');
-      favoritesStore.push({ id: index });
-      addToStore();
-    }
+  favorites.forEach((favorite, i) => {
+    favorite.setAttribute('data-id', i);
+    favorite.addEventListener('click', clickFavorite(i));
   });
-});
 
-favoritesStore.forEach((favorite) => {
-  const favoriteNode = document.querySelector(`[data-id="${favorite.id}"]`);
-  favoriteNode.classList.add('active');
-});
+  function clickFavorite(i) {
+    return (e) => {
+      const favorite = e.currentTarget;
+      if (favorite.classList[1] === 'active') {
+        removeFromStoreById(i);
+        favorite.classList.remove('active');
+      } else {
+        favorite.classList.add('active');
+        addToStore(i);
+      }
+    };
+  }
 
-function removeFromStoreById(id) {
-  const temp = favoritesStore.filter((el) => el.id !== id);
-  localStorage.setItem('favorites', JSON.stringify(temp));
-}
+  favoritesStore.forEach((favorite) => {
+    const favoriteNode = document.querySelector(`[data-id="${favorite.id}"]`);
+    favoriteNode.classList.add('active');
+  });
 
-function addToStore() {
-  localStorage.setItem('favorites', JSON.stringify(favoritesStore));
-}
+  function removeFromStoreById(id) {
+    favoritesStore = favoritesStore.filter((el) => el.id !== id);
+    localStorage.setItem('favorites', JSON.stringify(favoritesStore));
+  }
+
+  function addToStore(i) {
+    const temp = JSON.parse(localStorage.getItem('favorites')) || [];
+    temp.push({ id: i });
+    localStorage.setItem('favorites', JSON.stringify(temp));
+    favoritesStore = JSON.parse(localStorage.getItem('favorites'));
+  }
+})();

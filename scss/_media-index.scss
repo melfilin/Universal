@@ -287,6 +287,9 @@
   }
   .news {
     &-main {
+      &__image {
+        height: 215px;
+      }
       &__item {
         padding: 15px;
         padding-bottom: 0;
@@ -344,6 +347,9 @@
     &-container {
       width: 465px;
     }
+  }
+  .arrow-up {
+    display: none;
   }
 }
 
@@ -603,6 +609,7 @@
         font-size: 28px;
         max-width: 550px;
         line-height: 40px;
+        margin-bottom: 30px;
       }
     }
     &-career {
@@ -720,6 +727,7 @@
     }
     &-image {
       padding-bottom: 80px;
+      border-radius: 10px 10px 0 0;
     }
     &-user {
       margin-bottom: 30px;
@@ -1037,6 +1045,14 @@
     }
     &-slider {
       grid-row: span 1;
+      padding-left: 30px;
+      padding-right: 30px;
+      &__button {
+        margin-bottom: 15px;
+      }
+      &__title {
+        margin-bottom: 30px;
+      }
     }
     &-career {
       padding-bottom: 35px;
