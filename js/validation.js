@@ -2,23 +2,27 @@ class Validator {
   constructor(form) {
     this.form = form;
     this.inputs = form.querySelectorAll('input');
+    this.textareas = form.querySelectorAll('textarea');
     this.errors = {};
     this.values = {};
-    this.inputs.forEach((input) => {
-      this.values[input.name] = '';
-      const parent = input.closest('.parent');
-      const label = document.createElement('label');
-      label.setAttribute('for', input.name);
-      parent.insertAdjacentElement('beforeend', label);
-      if (input.name === 'checkbox') {
-        input.addEventListener('input', this.selectHandler.bind(this));
-        return;
-      }
-      input.addEventListener('input', this.inputHandler.bind(this));
-      input.addEventListener('change', this.inputHandler.bind(this));
-      input.addEventListener('blur', this.onBlur.bind(this));
-      input.addEventListener('focus', this.onFocus.bind(this));
-    });
+    this.inputs.forEach((input) => this.initField(input));
+    this.textareas.forEach((textarea) => this.initField(textarea));
+  }
+
+  initField(field) {
+    this.values[field.name] = '';
+    const parent = field.closest('.parent');
+    const label = document.createElement('label');
+    label.setAttribute('for', field.name);
+    parent.insertAdjacentElement('beforeend', label);
+    if (field.name === 'checkbox') {
+      field.addEventListener('input', this.selectHandler.bind(this));
+      return;
+    }
+    field.addEventListener('input', this.inputHandler.bind(this));
+    field.addEventListener('change', this.inputHandler.bind(this));
+    field.addEventListener('blur', this.onBlur.bind(this));
+    field.addEventListener('focus', this.onFocus.bind(this));
   }
 
   resetValues() {
@@ -62,6 +66,19 @@ class Validator {
         }
         if (!this.values[name]) {
           this.setErrors(name, 'Введите имя');
+        }
+        break;
+
+      case 'message':
+        if (this.values[name]) {
+          this.setErrors(name, '');
+          this.errors[name] = '';
+        }
+        if (this.values[name]?.length < 50) {
+          this.setErrors(name, 'Сообщение должно быть более 50 символов');
+        }
+        if (!this.values[name]) {
+          this.setErrors(name, 'Введите сообщение');
         }
         break;
 

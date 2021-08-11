@@ -35,8 +35,10 @@
     }
 
     async function sendForm(formData) {
-      tempText = button.innerText;
-      button.innerHTML = '<div class="loader loader__quart"></div>';
+      if (button) {
+        tempText = button.innerText;
+        button.innerHTML = '<div class="loader loader__quart"></div>';
+      }
       const res = await fetch('send.php', {
         body: formData,
         method: 'POST',
@@ -44,10 +46,11 @@
       if (res.ok) {
         modalClose();
         successOpen();
-        button.innerHTML = tempText;
       } else {
         modalClose();
         successOpen();
+      }
+      if (button) {
         button.innerHTML = tempText;
       }
       resetForm(form);

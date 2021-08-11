@@ -10,6 +10,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
+      href="$CSS&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
     <link
       rel="stylesheet"
@@ -83,25 +86,37 @@
       </a>
       <ul class="navbar-menu__mobile">
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile" href="#">Статьи</a>
+          <a class="navbar-menu__link-mobile" href="#" data-id="#articles"
+            >Статьи</a
+          >
         </li>
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile" href="#">Новости</a>
+          <a class="navbar-menu__link-mobile" href="#" data-id="#news"
+            >Новости</a
+          >
         </li>
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile" href="#">Горячее</a>
+          <a class="navbar-menu__link-mobile" href="#" data-id="#comments"
+            >Курсы</a
+          >
         </li>
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile" href="#">HTML</a>
+          <a class="navbar-menu__link-mobile" href="#" data-id="#footer"
+            >HTML</a
+          >
         </li>
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile" href="#">CSS</a>
+          <a class="navbar-menu__link-mobile" href="#" data-id="#footer">CSS</a>
         </li>
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile" href="#">JavaScript</a>
+          <a class="navbar-menu__link-mobile" href="#" data-id="#footer"
+            >JavaScript</a
+          >
         </li>
         <li class="navbar-menu__item-mobile">
-          <a class="navbar-menu__link-mobile" href="#">Web Design</a>
+          <a class="navbar-menu__link-mobile" href="#" data-id="#footer"
+            >Web Design</a
+          >
         </li>
       </ul>
       <a href="#" class="navbar-button__mobile">Оставить заявку</a>
@@ -832,12 +847,13 @@
                 method="POST"
                 class="form comments-form__form"
               >
-                <textarea
-                  name="message"
-                  class="comments-form__message"
-                  minlength="100"
-                  required
-                ></textarea>
+                <div class="parent">
+                  <textarea
+                    data-required="true"
+                    name="message"
+                    class="comments-form__message"
+                  ></textarea>
+                </div>
                 <button class="button comments-form__button hover-button">
                   <span class="comments-form__send">Отправить</span>
                   <img src="img/hero/Arrow.svg" alt="Иконка: Стрелка" />
@@ -1088,7 +1104,6 @@
             <textarea
               class="message modal__message"
               placeholder="Сообщение"
-              name="message"
             ></textarea>
           </div>
 
