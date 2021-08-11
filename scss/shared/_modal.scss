@@ -20,10 +20,10 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    max-width: 478px;
-    padding: 40px 60px;
+    max-width: 360px;
+    padding: 30px 35px;
     transform: translate(-50%, -50%);
-    background: #333c44;
+    background: #ffffff;
     border-radius: 8px;
     z-index: 106;
     visibility: hidden;
@@ -33,7 +33,7 @@
       visibility: visible;
       opacity: 1;
       overflow: hidden;
-      height: 560px;
+      height: 530px;
       max-height: 90%;
       overflow: auto;
     }
@@ -47,33 +47,52 @@
     cursor: pointer;
   }
   &__title {
-    font-weight: 400;
-    font-size: 18px;
+    font-family: Roboto Slab;
+    font-weight: bold;
+    margin: 0;
+    font-size: 20px;
+    line-height: 25px;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    color: $font-white;
+    color: #262d33;
   }
   &__input {
-    padding-left: 20px;
-    height: 50px;
+    padding-left: 1rem;
+    height: 40px;
     width: 100%;
-    margin-top: 15px;
-    border-radius: 5px;
     border: none;
+    border: 1px solid #d9dadb;
+    border-radius: 5px;
+    margin-top: 5px;
     outline: 0;
     &::placeholder {
       font-size: 12px;
-      color: #bdbdbd;
+      color: #939699;
     }
   }
+
+  input[name='select'] {
+    display: none;
+  }
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    &-desc {
+      font-size: 14px;
+      color: #4b5157;
+    }
+  }
+
   &__message {
     border-radius: 5px;
     padding-top: 18px;
-    padding-left: 20px;
+    padding-left: 1rem;
+    margin-top: 5px;
     width: 100%;
     min-height: 123px;
-    margin-top: 15px;
+    border: 1px solid #d9dadb;
     outline: 0;
     resize: none;
     &::placeholder {
@@ -82,14 +101,17 @@
     }
   }
   &__button {
-    min-width: 170px;
-    border-radius: 5px;
+    min-width: 122px;
     background: #4592ff;
     border: none;
     color: $font-white;
-    padding: 18px 60px;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 10px 25px;
     cursor: pointer;
     outline: 0;
+    height: 40px;
+    border-radius: 20px;
   }
   &__info {
     font-weight: bold;
@@ -104,7 +126,7 @@
   }
   &-wrapper {
     &__button {
-      margin-top: 30px;
+      margin-top: 15px;
       width: 100%;
       display: flex;
       align-items: center;
@@ -115,11 +137,21 @@
 
 .parent {
   width: 100%;
+  margin-bottom: 15px;
+  .checkbox__wrapper {
+    display: flex;
+    align-items: center;
+  }
   label {
     color: #ff9898;
     display: none;
     margin-top: 4px;
     font-size: 12px;
+  }
+  .modal__input-title {
+    font-weight: 900;
+    font-size: 14px;
+    color: #262d33;
   }
 }
 

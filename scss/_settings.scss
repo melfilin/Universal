@@ -146,6 +146,36 @@ img {
   }
 }
 
+.article-slider__container {
+  overflow: hidden;
+  position: relative;
+  .swiper-slide {
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      position: relative;
+    }
+  }
+  .article-slider__button--prev,
+  .article-slider__button--next {
+    position: absolute;
+    z-index: 10;
+    top: calc(50% - 20px);
+    cursor: pointer;
+  }
+
+  .article-slider__button--prev {
+    top: calc(50% - 20px);
+    left: 35px;
+  }
+
+  .article-slider__button--next {
+    top: calc(50% - 20px);
+    right: 35px;
+  }
+}
+
 .arrow-up {
   position: fixed;
   bottom: 50px;

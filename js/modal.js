@@ -18,12 +18,14 @@ modalCloseBtn.forEach((close) => close.addEventListener('click', modalClose));
 document.addEventListener('keydown', clickDocument);
 
 function modalOpen() {
+  document.documentElement.style = 'margin-right: 17px';
   document.body.style.overflow = 'hidden';
   modal.classList.add('modal__dialog--visible');
   modalOverlay.classList.add('modal__overlay--visible');
 }
 
 function modalClose() {
+  document.documentElement.style = 'margin-right: 0';
   document.body.style.overflow = 'auto';
   modal.classList.remove('modal__dialog--visible');
   modalOverlay.classList.remove('modal__overlay--visible');

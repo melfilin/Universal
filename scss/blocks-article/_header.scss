@@ -3,7 +3,7 @@
   position: relative;
   &-wrapper {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +21,7 @@
       font-weight: 700;
       font-size: 14px;
       text-decoration: none;
+      cursor: pointer;
       &--hot {
         margin-left: -4px;
       }

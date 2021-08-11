@@ -64,7 +64,6 @@
       padding: 40px 40px;
     }
     &__button {
-      padding: 15px 45px;
       margin-right: 10px;
     }
     &__info {
@@ -142,7 +141,7 @@
     &__dialog {
       padding: 30px 30px;
       height: 90%;
-      max-height: 560px;
+      max-height: 530px;
       overflow: scroll;
     }
     &__input {
@@ -189,6 +188,7 @@
     max-width: 90%;
   }
   .footer {
+    padding-top: 42px;
     &__title {
       font-size: 28px;
     }

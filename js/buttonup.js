@@ -1,6 +1,9 @@
 (() => {
+  const header = document.querySelector('.navbar');
   const button = document.querySelector('.arrow-up');
   button.addEventListener('click', (e) => {
-    window.scrollTo(0, 0);
+    header.scrollIntoView({
+      behavior: 'smooth',
+    });
   });
 })();

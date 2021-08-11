@@ -1,6 +1,21 @@
 (() => {
   const forms = document.querySelectorAll('form');
 
+  const select = new Select('#select', {
+    placeholder: 'Выбери тему',
+    data: [
+      { id: '1', value: 'Сss' },
+      { id: '2', value: 'JavaScript' },
+      { id: '3', value: 'Html' },
+      { id: '4', value: 'WebDesign' },
+    ],
+    onSelect(item) {
+      const input = document.querySelector('[name="select"]');
+      input.value = item.value;
+      input.dispatchEvent(new Event('change'));
+    },
+  });
+
   forms.forEach((form) => {
     const textarea = form.querySelector('textarea');
     const button = form.querySelector('button[type="submit"]');
@@ -51,9 +66,11 @@
     const successForm = document.querySelector('.success-form__wrapper');
 
     modalOverlay.addEventListener('click', successClose);
-    modalCloseBtn.forEach((close) =>
-      close.addEventListener('click', successClose)
-    );
+    modalCloseBtn.forEach((close) => {
+      if (successClose) {
+        close.addEventListener('click', successClose);
+      }
+    });
 
     function successOpen() {
       document.body.style.overflow = 'hidden';

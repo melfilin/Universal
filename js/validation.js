@@ -10,7 +10,12 @@ class Validator {
       const label = document.createElement('label');
       label.setAttribute('for', input.name);
       parent.insertAdjacentElement('beforeend', label);
+      if (input.name === 'checkbox') {
+        input.addEventListener('input', this.selectHandler.bind(this));
+        return;
+      }
       input.addEventListener('input', this.inputHandler.bind(this));
+      input.addEventListener('change', this.inputHandler.bind(this));
       input.addEventListener('blur', this.onBlur.bind(this));
       input.addEventListener('focus', this.onFocus.bind(this));
     });
@@ -21,7 +26,15 @@ class Validator {
   }
 
   inputHandler(e) {
+    console.log(e);
     const value = e.target.value;
+    const name = e.target.name;
+    this.values[name] = value;
+    this.getErrors(name);
+  }
+
+  selectHandler(e) {
+    const value = e.target.checked;
     const name = e.target.name;
     this.values[name] = value;
     this.getErrors(name);
@@ -51,6 +64,16 @@ class Validator {
           this.setErrors(name, 'Введите имя');
         }
         break;
+
+      case 'select':
+        if (this.values[name]) {
+          this.setErrors(name, '');
+          this.errors[name] = '';
+        }
+        if (!this.values[name]) {
+          this.setErrors(name, 'Выберите тему');
+        }
+        break;
       case 'email':
         if (!this.values[name]) {
           this.setErrors(name, 'Введите email');
@@ -59,6 +82,15 @@ class Validator {
           this.setErrors(name, 'Введите корректный email');
         }
         if (this.validateEmail(this.values[name])) {
+          this.setErrors(name, '');
+          this.errors[name] = '';
+        }
+        break;
+
+      case 'checkbox':
+        if (!this.values[name]) {
+          this.setErrors(name, 'Согласитесь с правилами');
+        } else {
           this.setErrors(name, '');
           this.errors[name] = '';
         }

@@ -4,7 +4,7 @@
       rgba(38, 45, 51, 0.75),
       rgba(38, 45, 51, 0.75)
     ),
-    url(../img/article-hero/back.jpeg);
+    url(../img/article-hero/back.webp);
   background-size: cover;
   &-block {
     padding-top: 60px;
@@ -66,7 +66,7 @@
       width: 21px;
       height: 27px;
       fill: #787b7e;
-      .active {
+      &.active {
         fill: #ff4f52;
       }
     }
