@@ -1,0 +1,45 @@
+.success {
+  &-form {
+    &__wrapper {
+      display: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #333c44;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      max-width: 478px;
+      padding: 40px 60px;
+      transform: translate(-50%, -50%);
+      border-radius: 8px;
+      z-index: 106;
+      color: $font-white;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.4s;
+      &--visible {
+        visibility: visible;
+        opacity: 1;
+        overflow: hidden;
+      }
+    }
+    &__photo {
+      width: 84px;
+      height: 84px;
+    }
+    &__title {
+      margin-top: 20px;
+      font-family: Roboto Slab, serif;
+      font-size: 23px;
+    }
+    &__text {
+      font-weight: 400;
+      text-align: center;
+      line-height: 20px;
+      max-width: 180px;
+      font-size: 14px;
+    }
+  }
+}

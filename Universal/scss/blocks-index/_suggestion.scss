@@ -1,0 +1,37 @@
+.suggestion {
+  &-wrapper {
+    background: $background;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid #4b5157;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+  }
+  &__item:last-child {
+    border-right: none;
+  }
+  &__text {
+    display: inline-block;
+    color: $font-white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 156px;
+  }
+  &-photo {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+  }
+}

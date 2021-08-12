@@ -1,0 +1,48 @@
+.repost {
+  background: #fff;
+  padding-bottom: 90px;
+  &-wrapper {
+    margin-left: 97px;
+  }
+  &__title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    line-height: 30px;
+    color: #262d33;
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  &__btn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4592ff;
+    border-radius: 20px;
+    border: none;
+    margin-right: 14px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    &--facebook {
+      padding: 10px 25px;
+    }
+  }
+  &__text {
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 8px;
+  }
+  &__number {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    &--42 {
+      color: #ffc4c9;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// Подключение normalize
+@import 'normalize';
+
+// Подключение базовых настроек
+@import 'settings';
+
+// Подключение переменных
+@import 'variables';
+
+// Подключение стилей для блока footer
+@import 'shared/footer';
+
+// Подключение стилей мобильного меню
+@import 'shared/mobile';
+
+// Подключение стилей окна успеха
+@import 'shared/success';
+
+// Подключение стилей модального окна
+@import 'shared/modal';
+
+// Подключение стилей для адаптива
+@import 'media-shared';
+
+// Плагин селект
+@import 'shared/select';

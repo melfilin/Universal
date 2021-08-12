@@ -1,0 +1,23 @@
+// Подключение style.scss
+@import 'style';
+
+// Подключение стилей для блока header
+@import 'blocks-article/header';
+
+// Подключение стилей для блока hero
+@import 'blocks-article/hero';
+
+// Подключение стилей для блока article
+@import 'blocks-article/article';
+
+// Подключение стилей для блока article
+@import 'blocks-article/repost';
+
+// Подключение стилей для блока news
+@import 'blocks-article/news';
+
+// Подключение стилей для блока comments
+@import 'blocks-article/comments';
+
+// Подключение стилей для адаптива
+@import 'media-article';
